@@ -563,7 +563,81 @@ function showVehicleDetails(vehicleId) {
             ],
         }
     };
-
+      VW1200J: {
+            brand: "VW Volkswagen",
+            model: "Beetle",
+            year: "1980",
+            fuel: "Бензин",
+            mileage: "70000",
+            transmission: "Рачен",
+            bodyStyle: "Мали градски",
+            color: "Бела",
+            registration: "Македонска",
+            registrationDate: "08.2025",
+            power: "48 kw / 65 ks",
+            emissionsClass :" Eуро 1",
+            images: [
+                "images/vehicle-4.jpg",
+                "images/VW3.jpg",
+                "images/VW4.jpg",
+                "images/VW5.jpg",
+                "images/VW6.jpg",
+                "images/VW7.jpg",
+                "images/VW8.jpg",
+            ],
+        }
+    };
+      BMW E92: {
+            brand: "BMW E92",
+            model: "325xi",
+            year: "2007",
+            fuel: "Бензин",
+            mileage: "185.000",
+            transmission: "Рачен",
+            bodyStyle: "Купе",
+            color: "Сива",
+            registration: "Македонска",
+            registrationDate: "02.06.2023",
+            power: "160kw/ 218hp",
+            emissionsClass :" Eуро 5",
+            images: [
+                "images/IMG_1204.jpg",
+                "images/IMG_1205.jpg",
+                "images/IMG_1207.jpg",
+                "images/IMG_1209.jpg",
+                "images/IMG_1210.jpg",
+                "images/IMG_1212.jpg",
+                "images/IMG_1231.jpg",
+                "images/IMG_1254.jpg",
+                "images/IMG_1262.jpg",
+                "images/IMG_1272.jpg",
+                "images/IMG_9469.jpg",
+            ],
+        }
+    };
+  Mercedes A-Class: {
+            brand: "Mercedes A-Class",
+            model: "A200",
+            year: "2007",
+            fuel: "Дизел",
+            mileage: "205.000",
+            transmission: "Рачен",
+            bodyStyle: "Мали градски",
+            color: "Сина",
+            registration: "Македонска",
+            registrationDate: "03.06.2023",
+            power: "103kw/ 140hp",
+            emissionsClass :" Eуро 5",
+            images: [
+                "images/DMRT9662.jpg",
+                "images/DMRT9664.jpg",
+                "images/DMRT9666.jpg",
+                "images/DMRT9669.jpg",
+                "images/DMRT9688.jpg",
+                "images/DMRT9694.jpg",
+            ],
+        }
+    };
     // Зачувај податоците на возилото во localStorage
     localStorage.setItem("selectedVehicle", JSON.stringify(vehicles[vehicleId]));
 
