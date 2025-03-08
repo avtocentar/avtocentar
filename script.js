@@ -609,7 +609,6 @@ function showVehicleDetails(vehicleId) {
                 "images/IMG_1254.jpg",
                 "images/IMG_1262.jpg",
                 "images/IMG_1272.jpg",
-                "images/IMG_9469.jpg",
             ],
         },
   MercedesAClass: {
