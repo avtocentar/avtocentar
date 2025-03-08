@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали за Возилото</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Swiper.js стилови -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+<!--<header>-->
+<!--    <h1>Детали за Возилото</h1>-->
+<!--</header>-->
+<header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <img id="logo" src="images/home-page.jpg">
+    <nav class="navbar" onclick="">
+        <a href="#home">Почетна</a>
+        <a href="#vehicles">Ново</a>
+        <a href="#services">Услуги</a>
+        <a href="#featured">Сите возила</a>
+        <a href="#reviews">Рати и лизинг</a>
+        <a href="#contact">Контакт</a>
+    </nav>
+
+    <div id="login-btn">
+        <button class="btn">Најави се</button>
+        <i class="far fa-user"></i>
+    </div>
+
+</header>
+<section id="vehicle-details">
+<!--    <h2 id="vehicleTitle"></h2>-->
+        <h2 id="vehicleTitle"></h2>
+
+        <div class="image-container">
+            <button id="prevBtn" class="arrow-btn">&#10094;</button> <!-- Лева стрелка -->
+            <img id="mainImage" src="images/vehicle-2.jpg" alt="Автомобил">
+            <button id="nextBtn" class="arrow-btn">&#10095;</button> <!-- Десна стрелка -->
+        </div>
+
+    <ul id="vehicleInfo">
+        <li>Марка:</li>
+        <li>Модел:</li>
+        <li>Година:</li>
+        <li>Гориво:</li>
+        <li>Километри:</li>
+        <li>Менувач:</li>
+        <li>Каросерија:</li>
+        <li>Боја:</li>
+        <li>Регистрација:</li>
+        <li>Регистрирана до:</li>
+        <li>Сила на моторот:</li>
+        <li>Класа на емисија:</li>
+    </ul>
+
+
+
+
+    <button id="wishlistButton">Додај во Wishlist</button>
+    <button id="backButton"></button>
+</section>
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Работно време: </h3>
+            <a href="#"><i class="fas fa-circle"></i> Понеделник - Сабота </a>
+            <a href="#"><i class="fas fa-circle"></i> 08:00 - 16:00</a>
+            <div class="container">
+                <div id="dycalendar"></div>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Линкови:</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i> Почетна </a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Ново </a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Услуги </a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Сите возила </a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Рати и лизинг </a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Контакт </a>
+        </div>
+
+        <div class="box">
+            <h3>Контакт: </h3>
+            <a href="#"><i class="fas fa-phone"></i> +389 77 575 625 </a>
+            <a href="#"><i class="fas fa-envelope"></i> avtocentar@gmail.com </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Kocani, North Macedonia 2300 </a>
+        </div>
+
+        <div class="box">
+            <h3>Новости: </h3>
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook </a>
+            <!--            <a href="#"><i class="fab fa-twitter"></i> Twitter </a>-->
+            <a href="#"><i class="fab fa-instagram"></i> Instagram </a>
+            <!--            <a href="#"><i class="fab fa-linkedin"></i> Linkedin </a>-->
+            <!--            <a href="#"><i class="fab fa-pinterest"></i> Pinterest </a>-->
+        </div>
+
+    </div>
+    <div class="credit"> Web Developer: Meri Manasieva | Аll rights reserved</div>
+</section>
+<!--<script>-->
+<!--    document.addEventListener("DOMContentLoaded", () => {-->
+<!--        const vehicle = JSON.parse(localStorage.getItem("selectedVehicle"));-->
+<!--        if (vehicle) {-->
+<!--            document.getElementById("vehicleTitle").textContent = vehicle.name;-->
+<!--            document.getElementById("vehicleImage").src = vehicle.image;-->
+<!--            document.getElementById("vehiclePrice").textContent = "Цена: €" + vehicle.price;-->
+<!--            document.getElementById("vehicleDetails").textContent = vehicle.details;-->
+<!--        }-->
+
+<!--        document.getElementById("wishlistButton").addEventListener("click", () => {-->
+<!--            alert("Возилото е додадено во Wishlist!");-->
+<!--        });-->
+<!--        document.getElementById("backButton").addEventListener("click", () => {-->
+<!--            window.history.back();-->
+<!--        });-->
+<!--    });-->
+<!--    document.addEventListener("DOMContentLoaded", () => {-->
+<!--        const vehicle = JSON.parse(localStorage.getItem("selectedVehicle"));-->
+<!--        if (vehicle) {-->
+<!--            document.getElementById("vehicleTitle").textContent = vehicle.name;-->
+<!--            document.getElementById("vehiclePrice").textContent = "Цена: €" + vehicle.price;-->
+<!--            document.getElementById("vehicleDetails").textContent = vehicle.details;-->
+<!--        }-->
+
+<!--        // Ако нема повеќе слики, користи само една-->
+<!--        const images = vehicle.images || [vehicle.image];-->
+<!--        let currentImageIndex = 0;-->
+<!--        const imageElement = document.getElementById("vehicleImage");-->
+
+<!--        function updateImage() {-->
+<!--            imageElement.src = images[currentImageIndex];-->
+<!--        }-->
+
+<!--        document.getElementById("nextImage").addEventListener("click", () => {-->
+<!--            currentImageIndex = (currentImageIndex + 1) % images.length;-->
+<!--            updateImage();-->
+<!--        });-->
+
+<!--        document.getElementById("prevImage").addEventListener("click", () => {-->
+<!--            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;-->
+<!--            updateImage();-->
+<!--        });-->
+
+<!--        updateImage();-->
+
+<!--        document.getElementById("wishlistButton").addEventListener("click", () => {-->
+<!--            alert("Возилото е додадено во Wishlist!");-->
+<!--        });-->
+
+<!--        document.getElementById("backButton").addEventListener("click", () => {-->
+<!--            window.history.back();-->
+<!--        });-->
+<!--    });-->
+
+<!--</script>-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const vehicleData = localStorage.getItem("selectedVehicle");
+
+        if (!vehicleData) {
+            console.error("Грешка: Нема зачувани податоци во localStorage!");
+            return;
+        }
+
+        const vehicle = JSON.parse(vehicleData);
+        let currentIndex = 0;
+
+        const mainImage = document.getElementById("mainImage");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        if (!vehicle.images || vehicle.images.length === 0) {
+            console.error("Грешка: Нема слики за ова возило!");
+            return;
+        }
+
+        // Почетна слика
+        mainImage.src = vehicle.images[currentIndex];
+              document.getElementById("wishlistButton").addEventListener("click", () => {
+                alert("Возилото е додадено во Wishlist!");
+              });
+        function updateImage(index) {
+            if (index >= 0 && index < vehicle.images.length) {
+                currentIndex = index;
+                mainImage.src = vehicle.images[currentIndex];
+            }
+        }
+
+        // Ротирање на слики
+        prevBtn.addEventListener("click", function () {
+            currentIndex = (currentIndex - 1 + vehicle.images.length) % vehicle.images.length;
+            updateImage(currentIndex);
+        });
+
+        nextBtn.addEventListener("click", function () {
+            currentIndex = (currentIndex + 1) % vehicle.images.length;
+            updateImage(currentIndex);
+        });
+
+        console.log("Image slider успешно иницијализиран!");
+    });
+
+    let currentImageIndex = 0;
+    const images = [
+        "images/vehicle-2.jpg",
+        "images/opel2014-2.jpg",
+        "images/opel2014-3.jpg",
+        "images/opel2014-4.jpg",
+        "images/opel2014-5.jpg",
+        "images/opel2014-6.jpg",
+        "images/opel2014-7.jpg",
+        "images/opel2014-8.jpg",
+        "images/opel2014-9.jpg",
+        "images/opel2014-10.jpg",
+        "images/opel2014-11.jpg",
+        "images/opel2014-12.jpg",
+        "images/opel2014-13.jpg",
+    ];
+
+    const mainImage = document.getElementById("mainImage");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    function updateImage() {
+        mainImage.src = images[currentImageIndex];
+    }
+
+    // Претходна слика
+    prevBtn.addEventListener("click", () => {
+        currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
+        updateImage();
+    });
+
+    // Следна слика
+    nextBtn.addEventListener("click", () => {
+        currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+        updateImage();
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const vehicleData = localStorage.getItem("selectedVehicle");
+
+        if (!vehicleData) {
+            console.error("Грешка: Нема зачувани податоци во localStorage!");
+            return;
+        }
+
+        const vehicle = JSON.parse(vehicleData);
+        let currentIndex = 0;
+
+        // Променете ги податоците динамички
+        document.getElementById("vehicleTitle").textContent = vehicle.name;
+
+        // const vehicleInfo = `
+        //     Марка: ${vehicle.brand} <br>
+        //     Модел: ${vehicle.model} <br>
+        //     Година: ${vehicle.year} <br>
+        //     Гориво: ${vehicle.fuel} <br>
+        //     Километри: ${vehicle.mileage} <br>
+        //     Менувач: ${vehicle.transmission} <br>
+        //     Каросерија: ${vehicle.bodyStyle} <br>
+        //     Боја: ${vehicle.color} <br>
+        //     Регистрација: ${vehicle.registration} <br>
+        //     Регистрирана до: ${vehicle.registrationDate} <br>
+        //     Сила на моторот: ${vehicle.power} <br>
+        //     Класа на емисија: ${vehicle.emissionsClass}
+        // `;
+        // document.getElementById("vehicleInfo").innerHTML = vehicleInfo;
+
+        const vehicleInfoList = document.getElementById("vehicleInfo");
+        vehicleInfoList.innerHTML = ""; // Исчисти ја постоечката содржина
+
+        const details = [
+            ["Марка:", vehicle.brand],
+            ["Модел:", vehicle.model],
+            ["Година:", vehicle.year],
+            ["Гориво:", vehicle.fuel],
+            ["Километри:", vehicle.mileage],
+            ["Менувач:", vehicle.transmission],
+            ["Каросерија:", vehicle.bodyStyle],
+            ["Боја:", vehicle.color],
+            ["Регистрација:", vehicle.registration],
+            ["Регистрирана до:", vehicle.registrationDate],
+            ["Сила на моторот:", vehicle.power],
+            ["Класа на емисија:", vehicle.emissionsClass]
+        ];
+
+        details.forEach(([label, value]) => {
+            let li = document.createElement("li");
+            li.innerHTML = `<span class="label">${label}</span> <span class="value">${value}</span>`;
+            vehicleInfoList.appendChild(li);
+        });
+
+
+        const mainImage = document.getElementById("mainImage");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        if (!vehicle.images || vehicle.images.length === 0) {
+            console.error("Грешка: Нема слики за ова возило!");
+            return;
+        }
+
+        // Почетна слика
+        mainImage.src = vehicle.images[currentIndex];
+
+        function updateImage(index) {
+            if (index >= 0 && index < vehicle.images.length) {
+                currentIndex = index;
+                mainImage.src = vehicle.images[currentIndex];
+            }
+        }
+
+        // Ротирање на слики
+        prevBtn.addEventListener("click", function () {
+            currentIndex = (currentIndex - 1 + vehicle.images.length) % vehicle.images.length;
+            updateImage(currentIndex);
+        });
+
+        nextBtn.addEventListener("click", function () {
+            currentIndex = (currentIndex + 1) % vehicle.images.length;
+            updateImage(currentIndex);
+        });
+    });
+</script>
+
+</body>
+</html>
