@@ -561,8 +561,7 @@ function showVehicleDetails(vehicleId) {
                 "images/VW7.jpg",
                 "images/VW8.jpg",
             ],
-        }
-    };
+        },
       VW1200J: {
             brand: "VW Volkswagen",
             model: "Beetle",
@@ -585,9 +584,8 @@ function showVehicleDetails(vehicleId) {
                 "images/VW7.jpg",
                 "images/VW8.jpg",
             ],
-        }
-    };
-      BMW E92: {
+        },
+      BMWE92: {
             brand: "BMW E92",
             model: "325xi",
             year: "2007",
@@ -613,9 +611,8 @@ function showVehicleDetails(vehicleId) {
                 "images/IMG_1272.jpg",
                 "images/IMG_9469.jpg",
             ],
-        }
-    };
-  Mercedes A-Class: {
+        },
+  MercedesAClass: {
             brand: "Mercedes A-Class",
             model: "A200",
             year: "2007",
