@@ -626,15 +626,14 @@ function showVehicleDetails(vehicleId) {
             power: "103kw/ 140hp",
             emissionsClass :" Eуро 5",
             images: [
-                "images/DMRT9662.jpg",
-                "images/DMRT9664.jpg",
-                "images/DMRT9666.jpg",
-                "images/DMRT9669.jpg",
-                "images/DMRT9688.jpg",
-                "images/DMRT9694.jpg",
+                "images/DMRT9662.JPG",
+                "images/DMRT9664.JPG",
+                "images/DMRT9666.JPG",
+                "images/DMRT9669.JPG",
+                "images/DMRT9688.JPG",
+                "images/DMRT9694.JPG",
             ],
-        }
-    };
+        },
     // Зачувај податоците на возилото во localStorage
     localStorage.setItem("selectedVehicle", JSON.stringify(vehicles[vehicleId]));
 
