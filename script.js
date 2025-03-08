@@ -625,9 +625,9 @@ function showVehicleDetails(vehicleId) {
             power: "103kw/ 140hp",
             emissionsClass :" Eуро 5",
             images: [
-                "images/DMRT9662.JPG",
-                "images/DMRT9664.JPG",
                 "images/DMRT9666.JPG",
+                "images/DMRT9664.JPG",
+                "images/DMRT9662.JPG",
                 "images/DMRT9669.JPG",
                 "images/DMRT9688.JPG",
                 "images/DMRT9694.JPG",
