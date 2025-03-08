@@ -633,6 +633,7 @@ function showVehicleDetails(vehicleId) {
                 "images/DMRT9694.JPG",
             ],
         },
+    };
     // Зачувај податоците на возилото во localStorage
     localStorage.setItem("selectedVehicle", JSON.stringify(vehicles[vehicleId]));
 
