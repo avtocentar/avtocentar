@@ -628,6 +628,7 @@ color:var(--blue);
     padding: 1rem;
     border-radius: 50%;
     transition: background 0.3s;
+    margin-top: 204px;
 }
 
 .swiper-button-prev:hover,
@@ -656,20 +657,20 @@ color:var(--blue);
 }
 
 .slide {
-/*     position: absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: opacity 1s ease-in-out; */
+    transition: opacity 1s ease-in-out;
 
-      background-size: cover; /* Možeš da isprobaš so contain */
-    background-position: center center; /* Drži ja slikata centrirana */
-    background-repeat: no-repeat; /* Sprečuva povtoruvanje na sliki */
-    width: 100%;
-    height: 100vh; /* Prilagodi go visinata spored potrebite */
-    object-fit: cover; /* Sprečuva razvlekuvanje */
+/*       background-size: cover; /* Možeš da isprobaš so contain */
+/*     background-position: center center; /* Drži ja slikata centrirana */
+/*     background-repeat: no-repeat; /* Sprečuva povtoruvanje na sliki */ */
+/*     width: 100%; */
+/*     height: 100vh; /* Prilagodi go visinata spored potrebite */ */
+    object-fit: cover; /* Sprečuva razvlekuvanje */ */ */
 }
 
 .slide.active {
