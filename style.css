@@ -213,6 +213,9 @@ color:var(--blue);
     padding-top: 12rem;
     text-align: center;
     overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .home h1{
