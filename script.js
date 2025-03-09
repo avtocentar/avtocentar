@@ -647,7 +647,7 @@ function showVehicleDetails(vehicleId) {
             power: "77kw / 105hp",
             emissionsClass :" Eуро 4",
             images: [
-                "images/golf-1.jpg",
+                "images/golf-1.1.jpg",
                 "images/golf-2.jpg",
                 "images/golf-3.jpg",
                 "images/golf-4.jpg",
