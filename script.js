@@ -6,13 +6,6 @@ menu.onclick=()=>{
     navbar.classList.toggle('active');
 }
 
-document.querySelector('#login-btn').onclick=()=>{
-    document.querySelector('.login-form-containter').classList.toggle('active');
-}
-
-document.querySelector('#close-login-form').onclick=()=>{
-    document.querySelector('.login-form-containter').classList.remove('active');
-}
 
 window.onscroll=()=>{
 
@@ -38,22 +31,7 @@ window.onload=()=>{
 
 }
 
-// document.querySelector('.home').onmousemove = (e) =>{
-//     document.querySelectorAll('.home-parallax').forEach(elm=>{
-//          let speed = elm.getAttribute('data-speed');
-//          let x = (window.innerWidth - e.pageX * speed) / 90;
-//          let y = (window.innerHeight - e.pageY * speed) / 90;
-//
-//          elm.style.transform = `translateX(${y}px) translateY(${x}px)`;
-//     });
-// };
-//
-// document.querySelector('.home').onmouseleave = () =>{
-//     document.querySelectorAll('.home-parallax').forEach(elm=>{
-//
-//         elm.style.transform = `translateX(0px) translateY(0px)`;
-//     });
-// };
+
 
 var swiper = new Swiper(".vehicles-slider", {
     slidesPerView: 1,
@@ -716,7 +694,7 @@ function showVehicleDetails(vehicleId) {
             power: "74kw / 100hp",
             emissionsClass :" Eуро 5",
             images: [
-                "images/fiat-1 (2).jpg",
+                "images/fiat-1 (3).jpg",
                 "images/fiat-2.jpg",
                 "images/fiat-3.jpg",
                 "images/fiat-4.jpg",
@@ -795,3 +773,57 @@ function filterVehicles() {
         vehicle.style.display = isVisible ? "block" : "none";
     });
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let slides = document.querySelectorAll('.slide');
+    let sliderHeading = document.getElementById("sliderHeading");
+    let sliderSubtext = document.getElementById("sliderSubtext");
+    let sliderText = document.querySelector('.slider-text');
+    let currentSlide = 0;
+
+    // Различен текст за секоја слика
+    const slideTexts = [
+        { heading: "Добредојдовте во Авто Центар!", subtext: "Најдобрите возила на пазарот." },
+        { heading: "Откријте го вашето ново возило!", subtext: "Голем избор на квалитетни автомобили." },
+        { heading: "Специјални понуди за оваа сезона!", subtext: "Погледнете ги најдобрите зделки." }
+    ];
+
+    function updateSlide() {
+        // Отстранување на 'active' од сите слики
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[currentSlide].classList.add("active");
+
+        // Фаде аут на текстот
+        sliderText.classList.remove("fade");
+
+        setTimeout(() => {
+            // Менување на текстот
+            sliderHeading.textContent = slideTexts[currentSlide].heading;
+            sliderSubtext.textContent = slideTexts[currentSlide].subtext;
+
+            // Фаде ин на текстот
+            sliderText.classList.add("fade");
+        }, 500); // Кратка пауза за ефектот да биде подобар
+    }
+
+    // Автоматска промена на слајдовите и текстот
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlide();
+    }, 5000); // Менување на секои 5 секунди
+
+    // Рачно менување со стрелки
+    document.getElementById("nextSlide").addEventListener("click", function () {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlide();
+    });
+
+    document.getElementById("prevSlide").addEventListener("click", function () {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateSlide();
+    });
+
+    // Прикажи ја првата слика и текст веднаш
+    updateSlide();
+});
