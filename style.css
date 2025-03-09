@@ -902,12 +902,12 @@ section#vehicle-filters label{
 
 #prevBtn {
     left: 10px;
-    margin: 58px 54px;
+    margin: 58px 15px;
 }
 
 #nextBtn {
     right: 10px;
-    margin: 58px 54px;
+    margin: 58px 15px;
 }
 
 .arrow-btn:hover {
