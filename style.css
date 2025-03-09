@@ -831,9 +831,9 @@ section#vehicle-filters label{
 
 #vehicle-details img {
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     border-radius: 10px;
-    margin-top: 140px;
+    margin-top: 108px;
 }
 
 #vehicle-details h2 {
