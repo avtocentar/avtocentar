@@ -596,7 +596,7 @@ function showVehicleDetails(vehicleId) {
             color: "Сива",
             registration: "Македонска",
             registrationDate: "02.06.2023",
-            power: "160kw/ 218hp",
+            power: "160kw / 218hp",
             emissionsClass :" Eуро 5",
             images: [
                 "images/IMG_1204.jpg",
@@ -622,7 +622,7 @@ function showVehicleDetails(vehicleId) {
             color: "Сина",
             registration: "Македонска",
             registrationDate: "03.06.2023",
-            power: "103kw/ 140hp",
+            power: "103kw / 140hp",
             emissionsClass :" Eуро 5",
             images: [
                 "images/DMRT9666.JPG",
@@ -633,6 +633,28 @@ function showVehicleDetails(vehicleId) {
                 "images/DMRT9694.JPG",
             ],
         },
+         VolkswagenGolf5: {
+            brand: "Volkswagen",
+            model: "Golf 5",
+            year: "2004",
+            fuel: "Дизел",
+            mileage: "172.000",
+            transmission: "Рачен",
+            bodyStyle: "Мали градски",
+            color: "Црна",
+            registration: "Македонска",
+            registrationDate: "24.09.2024",
+            power: "77kw / 105hp",
+            emissionsClass :" Eуро 4",
+            images: [
+                "images/golf-1.jpg",
+                "images/golf-2.jpg",
+                "images/golf-3.jpg",
+                "images/golf-4.jpg",
+                "images/golf-5.jpg",
+                "images/golf-6.jpg",
+            ],
+        },
     };
     // Зачувај податоците на возилото во localStorage
     localStorage.setItem("selectedVehicle", JSON.stringify(vehicles[vehicleId]));
@@ -640,25 +662,6 @@ function showVehicleDetails(vehicleId) {
     // Пренасочи на страницата со деталите
     window.location.href = "vehicle-details.html";
 }
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     var calendarEl = document.getElementById('calendar');
-//     var calendar = new FullCalendar.Calendar(calendarEl, {
-//         initialView: 'dayGridMonth', // Месечен преглед
-//         locale: 'mk', // Македонски јазик
-//         events: [
-//             {
-//                 title: 'Работно време: 08:00 - 16:00',
-//                 startTime: '08:00',
-//                 endTime: '16:00',
-//                 daysOfWeek: [1, 2, 3, 4, 5, 6], // Понеделник - Сабота
-//             }
-//         ]
-//     });
-//     calendar.render();
-//
-// });
 
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
