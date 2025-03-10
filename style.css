@@ -992,10 +992,10 @@ section{
 }
 @media (max-width: 991px) {
     .home {
-        height: 215px; /* Намали висината на мобилни уреди */
+        height: 138px; /* Намали висината на мобилни уреди */
     }
     #mobile {
-        font-size: 14px; /* Намалување на фонтот за да собира */
+        font-size: 9px; /* Намалување на фонтот за да собира */
         white-space: nowrap; /* Спречува одење во нов ред */
     }
     /*.background-slide {*/
