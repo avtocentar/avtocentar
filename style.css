@@ -709,7 +709,7 @@ section{
     }
 
     .slider-buttons button {
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0);
         color: white;
         border: none;
         font-size: 2rem;
