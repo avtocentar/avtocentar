@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", () => {
         filteredVehicles.forEach((vehicle, index) => {
             let vehicleCard = document.createElement("div");
             vehicleCard.classList.add("vehicle-card");
-            vehicleCard.innerHTML = `<h3>${vehicle.brand} ${vehicle.model}</h3><p>Цена: ${vehicle.price} €</p>`;
+            // vehicleCard.innerHTML = `<h3>${vehicle.brand} ${vehicle.model}</h3><p>Цена: ${vehicle.price} €</p>`;
             vehicleCard.addEventListener("click", () => showVehicleDetails(index));
             vehicleList.appendChild(vehicleCard);
         });
@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const brandFilter = document.getElementById("brandFilter");
     const modelFilter = document.getElementById("modelFilter");
     const fuelFilter = document.getElementById("fuelFilter");
-    const priceFilter = document.getElementById("priceFilter");
+
     const applyFilters = document.getElementById("applyFilters");
 
     function populateFilters() {
