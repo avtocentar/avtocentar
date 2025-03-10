@@ -1053,3 +1053,15 @@ section{
         }
     }
 }
+
+@media (max-width: 768px) {
+    #mobile {
+        font-size: 16px; /* Помала големина за телефони */
+    }
+}
+
+@media (max-width: 480px) {
+    #mobile {
+        font-size: 14px; /* Уште помала големина за многу мали екрани */
+    }
+}
