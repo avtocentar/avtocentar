@@ -376,7 +376,7 @@ section{
 
 .services .box-container .box{
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     border: var(--border);
