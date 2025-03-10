@@ -197,7 +197,6 @@ document.addEventListener("DOMContentLoaded", () => {
         vehicles.forEach((vehicle, index) => {
             let vehicleCard = document.createElement("div");
             vehicleCard.classList.add("vehicle-card");
-            vehicleCard.innerHTML = `<h3>${vehicle.brand} ${vehicle.model}</h3><p>Цена: ${vehicle.price} €</p>`;
             vehicleCard.addEventListener("click", () => showVehicleDetails(index));
             vehicleList.appendChild(vehicleCard);
         });
