@@ -1030,7 +1030,10 @@ section#vehicle-filters label {
 
 
 @media (max-width: 991px) {
-
+.sevices .box-container .box{
+                width: 215px;
+                margin-left: -8px;
+            }
     html {
         font-size: 55%;
     }
