@@ -979,7 +979,33 @@ section{
 .slider-text p {
     font-size: 1.6rem;
 }
+@media (max-width: 991px) {
+    .home {
+        height: 40vh; /* Намали висината на мобилни уреди */
+    }
+    #mobile {
+        font-size: 14px; /* Намалување на фонтот за да собира */
+        white-space: nowrap; /* Спречува одење во нов ред */
+    }
+    /*.background-slide {*/
+    /*    object-fit: contain; !* Ова ќе ја задржи сликата во добар формат *!*/
+    /*}*/
 
+    h1 {
+        font-size: 24px; /* Намали го текстот на мобилен */
+        text-align: center;
+    }
+
+    .home-parallax {
+        font-size: 22px; /* Намали го фонтот за да собира */
+        text-align: center; /* Центрирај го за да не излегува надвор */
+        padding: 10px; /* Додади малку простор околу текстот */
+    }
+
+    .background-slide {
+        object-fit: cover; /* Остава сликата со добар однос */
+    }
+}
 
 
 
