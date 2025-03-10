@@ -554,7 +554,7 @@ function showVehicleDetails(vehicleId) {
             power: "48 kw / 65 ks",
             emissionsClass :" Eуро 1",
             images: [
-                "images/vehicle-4.jpg",
+                "images/VW-1 (2).jpg",
                 "images/VW3.jpg",
                 "images/VW4.jpg",
                 "images/VW5.jpg",
