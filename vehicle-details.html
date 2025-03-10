@@ -38,7 +38,6 @@
             <img id="mainImage" src="" alt="Автомобил">
             <button id="nextBtn" class="arrow-btn">&#10095;</button> <!-- Десна стрелка -->
         </div>
-        <p id="vehicle-price" class="vehicle-price"></p>
     <ul id="vehicleInfo">
         <li>Марка:</li>
         <li>Модел:</li>
@@ -263,7 +262,6 @@
 
         const vehicleInfoList = document.getElementById("vehicleInfo");
         vehicleInfoList.innerHTML = ""; // Исчисти ја постоечката содржина
-document.getElementById('vehicle-price').textContent = "Цена: " + vehicle.price + " денари";
         const details = [
             ["Марка:", vehicle.brand],
             ["Модел:", vehicle.model],
