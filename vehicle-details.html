@@ -263,7 +263,7 @@
 
         const vehicleInfoList = document.getElementById("vehicleInfo");
         vehicleInfoList.innerHTML = ""; // Исчисти ја постоечката содржина
-
+document.getElementById('vehicle-price').textContent = "Цена: " + vehicle.price + " денари";
         const details = [
             ["Марка:", vehicle.brand],
             ["Модел:", vehicle.model],
