@@ -474,6 +474,7 @@ function showVehicleDetails(vehicleId) {
             registrationDate: "07.2023",
             power: "64 kw / 87 ks",
             emissionsClass : "Еуро 5",
+            price: "7.700",
             images: [
                 "images/vehicle-2.jpg",
                 "images/opel2014-2.jpg",
