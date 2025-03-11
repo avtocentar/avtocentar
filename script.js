@@ -471,7 +471,7 @@ function showVehicleDetails(vehicleId) {
             color: "Бела",
             registration: "Македонска",
             registrationDate: "07.2023",
-            power: "64 kw / 87 ks",
+            power: "64kw 87ks",
             emissionsClass : "Еуро 5",
             images: [
                 "images/vehicle-2.jpg",
@@ -500,7 +500,7 @@ function showVehicleDetails(vehicleId) {
             color: "Бела",
             registration: "Македонска",
             registrationDate: "06.2023",
-            power: "81 kw / 110 ks",
+            power: "81kw 110ks",
             emissionsClass : "Еуро 5",
             images: [
                 "images/vehicle-3.jpg",
@@ -527,7 +527,7 @@ function showVehicleDetails(vehicleId) {
             color: "Бела",
             registration: "Македонска",
             registrationDate: "08.2025",
-            power: "48 kw / 65 ks",
+            power: "48kw 65ks",
             emissionsClass :" Eуро 1",
             images: [
                 "images/VW-1 (2).jpg",
@@ -550,7 +550,7 @@ function showVehicleDetails(vehicleId) {
             color: "Сива",
             registration: "Македонска",
             registrationDate: "02.06.2023",
-            power: "160kw / 218hp",
+            power: "160kw 218hp",
             emissionsClass :" Eуро 5",
             images: [
                 "images/IMG_1204.jpg",
@@ -576,7 +576,7 @@ function showVehicleDetails(vehicleId) {
             color: "Сина",
             registration: "Македонска",
             registrationDate: "03.06.2023",
-            power: "103kw / 140hp",
+            power: "103kw 140hp",
             emissionsClass :" Eуро 5",
             images: [
                 "images/DMRT9666.JPG",
@@ -598,7 +598,7 @@ function showVehicleDetails(vehicleId) {
             color: "Црна",
             registration: "Македонска",
             registrationDate: "24.09.2024",
-            power: "77kw / 105hp",
+            power: "77kw 105hp",
             emissionsClass :" Eуро 4",
             images: [
                 "images/golf-1.1.jpg",
@@ -642,7 +642,7 @@ function showVehicleDetails(vehicleId) {
             color: "Црна",
             registration: "Македонска",
             registrationDate: "02.01.2025",
-            power: "85kw / 116hp",
+            power: "85kw 116hp",
             emissionsClass :" Eуро 5",
             images: [
                 "images/bmw-1.jpg",
@@ -668,7 +668,7 @@ function showVehicleDetails(vehicleId) {
             color: "Бела",
             registration: "Македонска",
             registrationDate: "18.05.2024",
-            power: "74kw / 100hp",
+            power: "74kw 100hp",
             emissionsClass :" Eуро 5",
             images: [
                 "images/fiat-1 (3).jpg",
@@ -684,8 +684,8 @@ function showVehicleDetails(vehicleId) {
     document.addEventListener("DOMContentLoaded", () => {
         const vehicle = vehicles['BMWF20'];
         if (vehicle.sold) {
-            console.log(vehicles['BMWF20']); // да видиш дали го чита
-            console.log('Продадено:', vehicles['BMWF20'].sold); // треба да каже true
+            // console.log(vehicles['BMWF20']); // да видиш дали го чита
+            // console.log('Продадено:', vehicles['BMWF20'].sold); // треба да каже true
             document.querySelector('.sold-badge').classList.remove('hidden');
         }
     });
