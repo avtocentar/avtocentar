@@ -1234,6 +1234,9 @@ sold-badge-fiat{
 .swiper-button-next {
     right: 15px;
 }
+        .services .box-container .box h3{
+            font-size: 1.7rem;
+        }
 
 }
 
