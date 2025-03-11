@@ -1174,6 +1174,9 @@ sold-badge-fiat{
         margin: 2rem;
         font-size: 2rem;
     }
+    h1.heading {
+        font-size: 21px;
+}
 }
 
 /* @media (max-width: 768px) {
