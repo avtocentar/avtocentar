@@ -1122,6 +1122,10 @@ sold-badge-fiat{
         padding: 2rem;
     }
 
+    header.header{
+        height: 9px;
+    }
+
     .header.active {
         padding: 2rem;
     }
