@@ -1007,6 +1007,26 @@ section#vehicle-filters label {
 .slider-text p {
     font-size: 1.6rem;
 }
+.sold-badge {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transform: rotate(30deg);
+    font-size: 13px;
+}
+
+.hidden {
+    display: none;
+}
+
+.image-wrapper {
+    position: relative;
+}
 @media (max-width: 991px) {
     .home {
         height: 138px; /* Намали висината на мобилни уреди */
