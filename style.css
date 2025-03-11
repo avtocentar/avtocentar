@@ -46,10 +46,10 @@ section{
 }
 
 #mobile {
-    font-size: 19px;
+    font-size: 22px;
     color: black;
-    /*     margin-right: -45px; */
     font-family: Arial;
+    font-weight: bold;
 }
 
 
@@ -78,6 +78,7 @@ section{
 #logo{
     width: 20%;
     margin-left: 10px;
+    display: block;
 }
 
 .btn{
