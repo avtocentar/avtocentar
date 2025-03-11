@@ -1219,7 +1219,7 @@ sold-badge-fiat{
 .swiper-button-prev:after,
 .swiper-button-next:after {
     font-size: 18px; /* Големина на самата стрелка */
-    color: white; /* Боја на стрелката */
+    color: black; /* Боја на стрелката */
 }
 /* Позиција */
 .swiper-button-prev {
