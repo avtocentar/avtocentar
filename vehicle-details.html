@@ -14,7 +14,7 @@
 <!--<header>-->
 <!--    <h1>Детали за Возилото</h1>-->
 <!--</header>-->
-<header class="header">
+<header class="header" id="vehicleHeader">
     <div id="menu-btn" class="fas fa-bars"></div>
     <a href="index.html#home">
         <img id="logo" src="images/home-page.jpg">
@@ -33,13 +33,13 @@
 
 </header>
 <section id="vehicle-details">
-<!--    <h2 id="vehicleTitle"></h2>-->
-        
-        <div class="image-container">
-            <button id="prevBtn" class="arrow-btn">&#10094;</button> <!-- Лева стрелка -->
-            <img id="mainImage" src="" alt="Автомобил">
-            <button id="nextBtn" class="arrow-btn">&#10095;</button> <!-- Десна стрелка -->
-        </div>
+    <!--    <h2 id="vehicleTitle"></h2>-->
+
+    <div class="image-container">
+        <button id="prevBtn" class="arrow-btn">&#10094;</button> <!-- Лева стрелка -->
+        <img id="mainImage" src="" alt="Автомобил">
+        <button id="nextBtn" class="arrow-btn">&#10095;</button> <!-- Десна стрелка -->
+    </div>
     <ul id="vehicleInfo">
         <li>Марка:</li>
         <li>Модел:</li>
@@ -54,11 +54,11 @@
         <li>Сила на моторот:</li>
         <li>Класа на емисија:</li>
     </ul>
-   
 
 
 
-<!--     <button id="wishlistButton">Додај во Wishlist</button> -->
+
+    <!--     <button id="wishlistButton">Додај во Wishlist</button> -->
     <button id="backButton"></button>
 </section>
 <section class="footer">
@@ -68,14 +68,14 @@
             <a href="#"><i class="fas fa-circle"></i> Понеделник - Сабота </a>
             <a href="#"><i class="fas fa-circle"></i> 08:00 - 16:00</a>
         </div>
-<!--         <div class="box">
-            <h3>Линкови:</h3>
-            <a href="#"><i class="fas fa-arrow-right"></i> Почетна </a>
-            <a href="#"><i class="fas fa-arrow-right"></i> Ново </a>
-            <a href="#"><i class="fas fa-arrow-right"></i> Услуги </a>
-            <a href="#"><i class="fas fa-arrow-right"></i> Сите возила </a>
-            <a href="#"><i class="fas fa-arrow-right"></i> Контакт </a>
-        </div> -->
+        <!--         <div class="box">
+                    <h3>Линкови:</h3>
+                    <a href="#"><i class="fas fa-arrow-right"></i> Почетна </a>
+                    <a href="#"><i class="fas fa-arrow-right"></i> Ново </a>
+                    <a href="#"><i class="fas fa-arrow-right"></i> Услуги </a>
+                    <a href="#"><i class="fas fa-arrow-right"></i> Сите возила </a>
+                    <a href="#"><i class="fas fa-arrow-right"></i> Контакт </a>
+                </div> -->
 
         <div class="box">
             <h3>Контакт: </h3>
@@ -172,9 +172,9 @@
 
         // Почетна слика
         mainImage.src = vehicle.images[currentIndex];
-              document.getElementById("wishlistButton").addEventListener("click", () => {
-                alert("Возилото е додадено во Wishlist!");
-              });
+        document.getElementById("wishlistButton").addEventListener("click", () => {
+            alert("Возилото е додадено во Wishlist!");
+        });
         function updateImage(index) {
             if (index >= 0 && index < vehicle.images.length) {
                 currentIndex = index;
