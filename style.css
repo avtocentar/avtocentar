@@ -46,10 +46,9 @@ section{
 }
 
 #mobile {
-    font-size: 22px;
+    font-size: 15px;
     color: black;
     font-family: Arial;
-    font-weight: bold;
 }
 
 
@@ -124,11 +123,15 @@ section{
     margin:0 2rem;
     color: black;
 }
-.header .navbar {
+ nav.navbar {
     display: flex;
     align-items: center;
-    gap: 20px; /* Наместо margin */
+    margin-left: -709px;
 }
+ div#mobile a{
+     text-decoration: none;
+     color: black;
+ }
 .header .navbar a:hover{
     color:var(--blue);
 }
@@ -1034,10 +1037,10 @@ section#vehicle-filters label {
 
 
 @media (max-width: 991px) {
-.sevices .box-container .box{
-                width: 215px;
-                margin-left: -8px;
-            }
+    .sevices .box-container .box{
+        width: 215px;
+        margin-left: -8px;
+    }
     html {
         font-size: 55%;
     }
@@ -1087,11 +1090,11 @@ section#vehicle-filters label {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-.header .navbar a {
-    display: block;
-    margin: 2rem;
-    font-size: 2rem;
-}
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
 }
 
 
