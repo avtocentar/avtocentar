@@ -1008,7 +1008,7 @@ section#vehicle-filters label {
     font-size: 1.6rem;
 }
 .sold-badge {
-    position: absolute;
+/*     position: absolute;
     top: 20px;
     right: 10px;
     background: red;
@@ -1017,8 +1017,21 @@ section#vehicle-filters label {
     font-weight: bold;
     border-radius: 5px;
     transform: rotate(30deg);
+    font-size: 13px; */
+
+        position: absolute;
+    top: 24px;
+    left: -2px;
+    background: red;
+    color: white;
+    padding: 6px 14px;
+    font-weight: bold;
+    transform: rotate(-38deg);
     font-size: 13px;
+    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    width: 100px;
 }
+   
 
 .hidden {
     display: none;
