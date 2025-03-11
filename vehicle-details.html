@@ -69,15 +69,7 @@
             <a href="#contact" onclick="return false;"><i class="fas fa-circle"></i> Понеделник - Сабота </a>
             <a href="#contact" onclick="return false;"><i class="fas fa-circle"></i> 08:00 - 16:00</a>
         </div>
-        <!--         <div class="box">
-                    <h3>Линкови:</h3>
-                    <a href="#"><i class="fas fa-arrow-right"></i> Почетна </a>
-                    <a href="#"><i class="fas fa-arrow-right"></i> Ново </a>
-                    <a href="#"><i class="fas fa-arrow-right"></i> Услуги </a>
-                    <a href="#"><i class="fas fa-arrow-right"></i> Сите возила </a>
-                    <a href="#"><i class="fas fa-arrow-right"></i> Контакт </a>
-                </div> -->
-
+       
         <div class="box">
             <h3>Контакт: </h3>       
             <a href="#contact" onclick="return false;"><i class="fas fa-phone"></i> +389 77 575 625</a>
@@ -94,62 +86,7 @@
     </div>
     <div class="credit"> © Avto Centar 2025 </div>
 </section>
-<!--<script>-->
-<!--    document.addEventListener("DOMContentLoaded", () => {-->
-<!--        const vehicle = JSON.parse(localStorage.getItem("selectedVehicle"));-->
-<!--        if (vehicle) {-->
-<!--            document.getElementById("vehicleTitle").textContent = vehicle.name;-->
-<!--            document.getElementById("vehicleImage").src = vehicle.image;-->
-<!--            document.getElementById("vehiclePrice").textContent = "Цена: €" + vehicle.price;-->
-<!--            document.getElementById("vehicleDetails").textContent = vehicle.details;-->
-<!--        }-->
 
-<!--        document.getElementById("wishlistButton").addEventListener("click", () => {-->
-<!--            alert("Возилото е додадено во Wishlist!");-->
-<!--        });-->
-<!--        document.getElementById("backButton").addEventListener("click", () => {-->
-<!--            window.history.back();-->
-<!--        });-->
-<!--    });-->
-<!--    document.addEventListener("DOMContentLoaded", () => {-->
-<!--        const vehicle = JSON.parse(localStorage.getItem("selectedVehicle"));-->
-<!--        if (vehicle) {-->
-<!--            document.getElementById("vehicleTitle").textContent = vehicle.name;-->
-<!--            document.getElementById("vehiclePrice").textContent = "Цена: €" + vehicle.price;-->
-<!--            document.getElementById("vehicleDetails").textContent = vehicle.details;-->
-<!--        }-->
-
-<!--        // Ако нема повеќе слики, користи само една-->
-<!--        const images = vehicle.images || [vehicle.image];-->
-<!--        let currentImageIndex = 0;-->
-<!--        const imageElement = document.getElementById("vehicleImage");-->
-
-<!--        function updateImage() {-->
-<!--            imageElement.src = images[currentImageIndex];-->
-<!--        }-->
-
-<!--        document.getElementById("nextImage").addEventListener("click", () => {-->
-<!--            currentImageIndex = (currentImageIndex + 1) % images.length;-->
-<!--            updateImage();-->
-<!--        });-->
-
-<!--        document.getElementById("prevImage").addEventListener("click", () => {-->
-<!--            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;-->
-<!--            updateImage();-->
-<!--        });-->
-
-<!--        updateImage();-->
-
-<!--        document.getElementById("wishlistButton").addEventListener("click", () => {-->
-<!--            alert("Возилото е додадено во Wishlist!");-->
-<!--        });-->
-
-<!--        document.getElementById("backButton").addEventListener("click", () => {-->
-<!--            window.history.back();-->
-<!--        });-->
-<!--    });-->
-
-<!--</script>-->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const vehicleData = localStorage.getItem("selectedVehicle");
