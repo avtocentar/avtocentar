@@ -1129,9 +1129,15 @@ sold-badge-fiat{
     section {
         padding: 2rem;
     }
+    img#logo{
+        margin: auto;
+    }
+    #mobile{
+        font-size: 10px;
+    }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
     #menu-btn {
         display: block;
@@ -1168,10 +1174,10 @@ sold-badge-fiat{
         margin: 2rem;
         font-size: 2rem;
     }
-}
+} */
 
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
 
     html {
         font-size: 50%;
@@ -1193,3 +1199,4 @@ sold-badge-fiat{
         font-size: 12px; /* Уште помала големина за многу мали екрани */
     }
 }
+ */
