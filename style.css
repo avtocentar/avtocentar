@@ -1193,9 +1193,7 @@ sold-badge-fiat{
     h1.heading {
         font-size: 21px;
 }
-    .swiper-button-prev, .swiper-button-next{
-        display: none;
-    }
+   
     .swiper.vehicles-slider.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
         font-size: -2px;
         width: 65%;
