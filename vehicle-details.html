@@ -40,6 +40,7 @@
         <img id="mainImage" src="" alt="Автомобил">
         <button id="nextBtn" class="arrow-btn">&#10095;</button> <!-- Десна стрелка -->
     </div>
+    <div id="vehiclePrice" class="vehicle-price"></div>
     <ul id="vehicleInfo">
         <li>Марка:</li>
         <li>Модел:</li>
@@ -261,7 +262,7 @@
         //     Класа на емисија: ${vehicle.emissionsClass}
         // `;
         // document.getElementById("vehicleInfo").innerHTML = vehicleInfo;
-
+        document.getElementById("vehiclePrice").textContent = `Цена: ${vehicle.price}`; 
         const vehicleInfoList = document.getElementById("vehicleInfo");
         vehicleInfoList.innerHTML = ""; // Исчисти ја постоечката содржина
         const details = [
