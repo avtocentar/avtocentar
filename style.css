@@ -1050,7 +1050,7 @@ sold-badge-fiat{
 }
 
 
-#fiat.sold-badge {
+#fiat-sold-badge {
     position: absolute;
     top: 24px;
     left: 8px;
