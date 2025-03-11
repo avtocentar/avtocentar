@@ -654,6 +654,7 @@ function showVehicleDetails(vehicleId) {
                 "images/bmw-7.jpg",
                 "images/bmw-8.jpg",
             ],
+            sold: true
         },
 
         Fiat500sport: {
@@ -680,6 +681,14 @@ function showVehicleDetails(vehicleId) {
             ],
         },
     };
+    document.addEventListener("DOMContentLoaded", () => {
+        const vehicle = vehicles['BMWF20'];
+        if (vehicle.sold) {
+            console.log(vehicles['BMWF20']); // да видиш дали го чита
+            console.log('Продадено:', vehicles['BMWF20'].sold); // треба да каже true
+            document.querySelector('.sold-badge').classList.remove('hidden');
+        }
+    });
     // Зачувај податоците на возилото во localStorage
     localStorage.setItem("selectedVehicle", JSON.stringify(vehicles[vehicleId]));
 
