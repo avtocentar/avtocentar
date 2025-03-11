@@ -1027,6 +1027,44 @@ section#vehicle-filters label {
 .image-wrapper {
     position: relative;
 }
+.vehicle-price {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 991px) {
     .home {
         height: 138px; /* Намали висината на мобилни уреди */
