@@ -488,6 +488,7 @@ function showVehicleDetails(vehicleId) {
                 "images/opel2014-12.jpg",
                 "images/opel2014-13.jpg",
             ],
+            price: "7.700 €",
         },
         peugeot208: {
             brand: "Peugeot",
@@ -515,6 +516,7 @@ function showVehicleDetails(vehicleId) {
                 "images/peugeot10.jpg",
                 "images/peugeot11.jpg",
             ],
+            price: "9.800 €",
         },
         VW1200J: {
             brand: "VW Volkswagen",
@@ -538,6 +540,7 @@ function showVehicleDetails(vehicleId) {
                 "images/VW7.jpg",
                 "images/VW8.jpg",
             ],
+            price: "3.000 €",
         },
         BMWE92: {
             brand: "BMW E92",
@@ -564,6 +567,7 @@ function showVehicleDetails(vehicleId) {
                 "images/IMG_1262.jpg",
                 "images/IMG_1272.jpg",
             ],
+            price: "9.300 €",
         },
         MercedesAClass: {
             brand: "Mercedes A-Class",
@@ -586,6 +590,7 @@ function showVehicleDetails(vehicleId) {
                 "images/DMRT9688.JPG",
                 "images/DMRT9694.JPG",
             ],
+            price: "4.000 €",
         },
         VolkswagenGolf5: {
             brand: "Volkswagen",
@@ -608,6 +613,7 @@ function showVehicleDetails(vehicleId) {
                 "images/golf-5.jpg",
                 "images/golf-6.jpg",
             ],
+            price: "4.200 €",
         },
         RenaultClio: {
             brand: "Renault",
@@ -630,6 +636,7 @@ function showVehicleDetails(vehicleId) {
                 "images/renault-5.jpg",
                 "images/renault-6.jpg",
             ],
+            price: "6.500 €",
         },
         BMWF20: {
             brand: "Bmw",
@@ -654,7 +661,8 @@ function showVehicleDetails(vehicleId) {
                 "images/bmw-7.jpg",
                 "images/bmw-8.jpg",
             ],
-            sold: true
+            price: "9.800 €",
+            sold: true,
         },
 
         Fiat500sport: {
@@ -679,6 +687,7 @@ function showVehicleDetails(vehicleId) {
                 "images/fiat-6.jpg",
                 "images/fiat-7.jpg",
             ],
+            price: "5.700 €",
         },
     };
     document.addEventListener("DOMContentLoaded", () => {
