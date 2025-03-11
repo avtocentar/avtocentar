@@ -1024,7 +1024,7 @@ section#vehicle-filters label {
 sold-badge-fiat{
     position: absolute;
     top: 24px;
-    left: -2px;
+    left: 45px;
     background: red;
     color: white;
     padding: 6px 14px;
