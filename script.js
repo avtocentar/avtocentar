@@ -696,6 +696,7 @@ function showVehicleDetails(vehicleId) {
             // console.log(vehicles['BMWF20']); // да видиш дали го чита
             // console.log('Продадено:', vehicles['BMWF20'].sold); // треба да каже true
             document.querySelector('.sold-badge').classList.remove('hidden');
+            document.querySelector('.sold-badge-fiat').classList.remove('hidden');
         }
     });
     // Зачувај податоците на возилото во localStorage
