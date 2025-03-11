@@ -1206,7 +1206,7 @@ sold-badge-fiat{
 .swiper-button-next {
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.6); /* Црна полупроѕирна позадина */
+    background-color:var(--light-grey); /* Црна полупроѕирна позадина */
     color: black; /* Бел знак во средина */
     border-radius: 50%; /* Круг */
     display: flex;
