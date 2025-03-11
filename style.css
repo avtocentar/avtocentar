@@ -51,7 +51,15 @@ section{
     font-family: Arial;
 }
 
-
+div#mobile a{
+    text-decoration: none;
+    color: black;
+}
+nav.navbar {
+    display: flex;
+    align-items: center;
+    margin-left: -709px;
+}
 .heading{
     text-align: center;
     padding-bottom: 2rem;
@@ -123,15 +131,8 @@ section{
     margin:0 2rem;
     color: black;
 }
- nav.navbar {
-    display: flex;
-    align-items: center;
-    margin-left: -709px;
-}
- div#mobile a{
-     text-decoration: none;
-     color: black;
- }
+
+
 .header .navbar a:hover{
     color:var(--blue);
 }
