@@ -1396,6 +1396,10 @@ sold-badge-fiat{
     clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
     width: 100px;
         }
+
+        .vehicles .vehicles-slider .box img{
+            width: 74%;
+        }
         
 
 }
