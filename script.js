@@ -323,31 +323,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-//     const vehicles = [
-//         { brand: "Audi", model: "A4", fuel: "Дизел", price: 15000, image: "images/audi-a4.jpg", details: "Одличен семеен автомобил." },
-//         { brand: "BMW", model: "320d", fuel: "Дизел", price: 18000, image: "images/bmw-320d.jpg", details: "Спортски стил и економичност." },
-//         { brand: "Mercedes", model: "C220", fuel: "Бензин", price: 20000, image: "images/mercedes-c220.jpg", details: "Луксуз и удобност." },
-//         { brand: "Volkswagen", model: "Golf 7", fuel: "Дизел", price: 14000, image: "images/golf-7.jpg", details: "Економично и практично возило." }
-//     ];
-//
-//     const vehicleList = document.getElementById("vehicle-list");
-//     const modal = document.getElementById("vehicleModal");
-//     const modalTitle = document.getElementById("vehicleTitle");
-//     const modalImage = document.getElementById("vehicleImage");
-//     const modalDetails = document.getElementById("vehicleDetails");
-//     const closeModal = document.querySelector(".close");
-//     const wishlistButton = document.getElementById("wishlistButton");
-
-    // function displayVehicles() {
-    //     vehicleList.innerHTML = "";
-    //     vehicles.forEach((vehicle, index) => {
-    //         let vehicleCard = document.createElement("div");
-    //         vehicleCard.classList.add("vehicle-card");
-    //         vehicleCard.innerHTML = `<h3>${vehicle.brand} ${vehicle.model}</h3><p>Цена: ${vehicle.price} €</p>`;
-    //         vehicleCard.addEventListener("click", () => showVehicleDetails(index));
-    //         vehicleList.appendChild(vehicleCard);
-    //     });
-    // }
 
     function showVehicleDetails(index) {
         const vehicle = vehicles[index];
@@ -367,19 +342,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     displayVehicles();
 });
-
-
-// function openVehicleDetails(name, image, price, details) {
-//     const vehicle = {
-//         name: name,
-//         image: image,
-//         price: price,
-//         details: details
-//     };
-//     localStorage.setItem("selectedVehicle", JSON.stringify(vehicle));
-//     window.location.href = "vehicle-details.html"; // Отвара детална страница
-// }
-
 
 
 document.getElementById("reserveButton").addEventListener("click", () => {
@@ -441,16 +403,16 @@ document.querySelectorAll(".btn.details").forEach(button => {
         window.location.href = "vehicle-details.html"; // Оди на страната со детали
     });
 });
-// Земаме го елементот што ги содржи сликите
+
 const imageSlider = document.getElementById("image-slider");
 
-// Читаме ги сликите од data-images атрибутот
+
 const imageList = JSON.parse(imageSlider.getAttribute("data-images"));
 
-// Чистиме стари слики ако има
+
 imageSlider.innerHTML = "";
 
-// Додаваме секоја слика во каруселот
+
 imageList.forEach(imgSrc => {
     let imgElement = document.createElement("img");
     imgElement.src = imgSrc;
@@ -698,10 +660,10 @@ function showVehicleDetails(vehicleId) {
             document.querySelector('.sold-badge').classList.remove('hidden');
         }
     });
-    // Зачувај податоците на возилото во localStorage
+   
     localStorage.setItem("selectedVehicle", JSON.stringify(vehicles[vehicleId]));
 
-    // Пренасочи на страницата со деталите
+    
     window.location.href = "vehicle-details.html";
 }
 
@@ -714,12 +676,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',  // Првичен изглед – месечен календар
-        locale: 'mk',  // Македонски јазик
+        initialView: 'dayGridMonth',  
+        locale: 'mk',  
         headerToolbar: {
-            left: 'prev,next today',  // Копчиња за навигација
-            center: 'title',  // Наслов (Јануари 2025, Февруари 2025 итн.)
-            right: 'dayGridMonth,timeGridWeek,timeGridDay'  // Промена на изглед
+            left: 'prev,next today',  
+            center: 'title',  
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'  
         },
         height: 600
     });
@@ -776,7 +738,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let sliderText = document.querySelector('.slider-text');
     let currentSlide = 0;
 
-    // Различен текст за секоја слика
+    
     const slideTexts = [
         { heading: "Добредојдовте во Авто Центар!", subtext: "Најдобрите возила на пазарот." },
         { heading: "Откријте го вашето ново возило!", subtext: "Голем избор на квалитетни автомобили." },
@@ -784,30 +746,30 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     function updateSlide() {
-        // Отстранување на 'active' од сите слики
+        
         slides.forEach(slide => slide.classList.remove("active"));
         slides[currentSlide].classList.add("active");
 
-        // Фаде аут на текстот
+        
         sliderText.classList.remove("fade");
 
         setTimeout(() => {
-            // Менување на текстот
+            
             sliderHeading.textContent = slideTexts[currentSlide].heading;
             sliderSubtext.textContent = slideTexts[currentSlide].subtext;
 
-            // Фаде ин на текстот
+            
             sliderText.classList.add("fade");
         }, 500); // Кратка пауза за ефектот да биде подобар
     }
 
-    // Автоматска промена на слајдовите и текстот
+    
     setInterval(() => {
         currentSlide = (currentSlide + 1) % slides.length;
         updateSlide();
     }, 5000); // Менување на секои 5 секунди
 
-    // Рачно менување со стрелки
+    
     document.getElementById("nextSlide").addEventListener("click", function () {
         currentSlide = (currentSlide + 1) % slides.length;
         updateSlide();
@@ -818,6 +780,6 @@ document.addEventListener("DOMContentLoaded", function () {
         updateSlide();
     });
 
-    // Прикажи ја првата слика и текст веднаш
+    
     updateSlide();
 });
