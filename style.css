@@ -738,17 +738,16 @@ nav.navbar {
 
 .slider-buttons button {
     background: rgba(0, 0, 0, 0);
-    color: white;
+    color: transparent;
     border: none;
     font-size: 2rem;
     padding: 1rem;
-    cursor: pointer;
     transition: 0.3s;
     margin-top: 77px;
 }
 
 .slider-buttons button:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0);
 }
 
 
