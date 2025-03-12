@@ -1437,19 +1437,9 @@ sold-badge-fiat{
                     width: 74%;
                 }
                  */
-        #vehicle-details img{
-            margin-top: 40px;
-        }
+       
 
-        #prevBtn {
-    left: 10px;
-    margin: 12px -25px;
-}
-
-#nextBtn {
-    right: 10px;
-    margin: 12px -25px;
-}
+        
 
     }
 
