@@ -1020,7 +1020,7 @@ section#vehicle-filters label {
     clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
     width: 100px;
 }
-   
+
 sold-badge-fiat{
     position: absolute;
     top: 24px;
@@ -1223,7 +1223,7 @@ sold-badge-fiat{
     #mobile{
         font-size: 10px;
     }
-      #menu-btn {
+    #menu-btn {
         display: block;
     }
 
@@ -1264,25 +1264,25 @@ sold-badge-fiat{
     }
     h1.heading {
         font-size: 21px;
-}
-   
+    }
+
     .swiper.vehicles-slider.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
-        font-size: -2px;
+        /*font-size: -2px;*/
         width: 65%;
-}
+    }
 
     .vehicles-slider {
-    position: relative; 
+        position: relative;
 
         .swiper-button-prev,
-.swiper-button-next {
-    width: 40px;
+        .swiper-button-next {
+            width: 40px;
             height: 40px;
             background-color: rgba(0, 0, 0, 0);
             color: black;
             border-radius: 50%;
             display: flex
-;
+        ;
             justify-content: center;
             align-items: center;
             z-index: 100;
@@ -1292,178 +1292,177 @@ sold-badge-fiat{
             margin-left: -26px;
             margin-right: -26px;
             margin-top: -116px;
-}
-.swiper-button-prev:after,
-.swiper-button-next:after {
-    font-size: 18px; /* Големина на самата стрелка */
-    color: black; /* Боја на стрелката */
-}
-/* Позиција */
-.swiper-button-prev {
-    left: 15px;
-}
+        }
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            font-size: 18px; /* Големина на самата стрелка */
+            color: black; /* Боја на стрелката */
+        }
+        /* Позиција */
+        .swiper-button-prev {
+            left: 15px;
+        }
 
-.swiper-button-next {
-    right: 15px;
-}
+        .swiper-button-next {
+            right: 15px;
+        }
         .services .box-container .box h3{
             font-size: 1.7rem;
         }
 
-         #bmwe92-sold-badge{
+        #bmwe92-sold-badge{
 
             position: absolute;
-    top: 24px;
-    left: -1px;
-    background: red;
-    color: white;
-    padding: 6px 14px;
-    font-weight: bold;
-    transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-    width: 100px;
+            top: 24px;
+            left: -1px;
+            background: red;
+            color: white;
+            padding: 6px 14px;
+            font-weight: bold;
+            transform: rotate(-38deg);
+            font-size: 13px;
+            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+            width: 100px;
         }
-            #bmwf20-sold-badge{
+        #bmwf20-sold-badge{
 
             position: absolute;
-    top: 24px;
-    left: -1px;
-    background: red;
-    color: white;
-    padding: 6px 14px;
-    font-weight: bold;
-    transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-    width: 100px;
+            top: 24px;
+            left: -1px;
+            background: red;
+            color: white;
+            padding: 6px 14px;
+            font-weight: bold;
+            transform: rotate(-38deg);
+            font-size: 13px;
+            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+            width: 100px;
         }
 
         #mercedes-sold-badge{
             position: absolute;
-    top: 24px;
-    left: -1px;
-    background: red;
-    color: white;
-    padding: 6px 14px;
-    font-weight: bold;
-    transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-    width: 100px;
-            
+            top: 24px;
+            left: -1px;
+            background: red;
+            color: white;
+            padding: 6px 14px;
+            font-weight: bold;
+            transform: rotate(-38deg);
+            font-size: 13px;
+            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+            width: 100px;
+
         }
 
         #golf5-sold-badge{
             position: absolute;
-    top: 24px;
-    left: -1px;
-    background: red;
-    color: white;
-    padding: 6px 14px;
-    font-weight: bold;
-    transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-    width: 100px;
-            
+            top: 24px;
+            left: -1px;
+            background: red;
+            color: white;
+            padding: 6px 14px;
+            font-weight: bold;
+            transform: rotate(-38deg);
+            font-size: 13px;
+            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+            width: 100px;
+
         }
 
         #renaultclio-sold-badge{
             position: absolute;
-    top: 24px;
-    left: 2px;
-    background: red;
-    color: white;
-    padding: 6px 14px;
-    font-weight: bold;
-    transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-    width: 100px;
+            top: 24px;
+            left: 2px;
+            background: red;
+            color: white;
+            padding: 6px 14px;
+            font-weight: bold;
+            transform: rotate(-38deg);
+            font-size: 13px;
+            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+            width: 100px;
         }
 
         #fiat-sold-badge{
             position: absolute;
-    top: 24px;
-    left: 31px;
-    background: red;
-    color: white;
-    padding: 6px 14px;
-    font-weight: bold;
-    transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-    width: 100px;
+            top: 24px;
+            left: 31px;
+            background: red;
+            color: white;
+            padding: 6px 14px;
+            font-weight: bold;
+            transform: rotate(-38deg);
+            font-size: 13px;
+            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+            width: 100px;
         }
 
-/*         .vehicles .vehicles-slider .box img{
-            width: 74%;
+        /*         .vehicles .vehicles-slider .box img{
+                    width: 74%;
+                }
+                 */
+
+    }
+
+    /* @media (max-width: 768px) {
+    
+        #menu-btn {
+            display: block;
         }
-         */
+    
+        #menu-btn.fa-times {
+            transform: rotate(180deg);
+        }
+    
+        .header #login-btn i {
+            display: block;
+        }
+    
+        .header #login-btn .btn {
+            display: none;
+        }
+    
+        .header .navbar {
+            position: absolute;
+            top: 99%;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border-top: var(--border);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+    
+        .header .navbar.active {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    
+        .header .navbar a {
+            display: block;
+            margin: 2rem;
+            font-size: 2rem;
+        }
+    } */
 
+
+    /* @media (max-width: 450px) {
+    
+        html {
+            font-size: 50%;
+        }
+    
+        .heading {
+            font-size: 3rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        #mobile {
+            font-size: 16px; /* Помала големина за телефони */
 }
 
-/* @media (max-width: 768px) {
 
-    #menu-btn {
-        display: block;
-    }
-
-    #menu-btn.fa-times {
-        transform: rotate(180deg);
-    }
-
-    .header #login-btn i {
-        display: block;
-    }
-
-    .header #login-btn .btn {
-        display: none;
-    }
-
-    .header .navbar {
-        position: absolute;
-        top: 99%;
-        left: 0;
-        right: 0;
-        background: #fff;
-        border-top: var(--border);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    .header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    .header .navbar a {
-        display: block;
-        margin: 2rem;
-        font-size: 2rem;
-    }
-} */
-
-
-/* @media (max-width: 450px) {
-
-    html {
-        font-size: 50%;
-    }
-
-    .heading {
-        font-size: 3rem;
-    }
-}
-
-@media (max-width: 768px) {
-    #mobile {
-        font-size: 16px; /* Помала големина за телефони */
-    }
-}
-
-@media (max-width: 480px) {
-    #mobile {
-        font-size: 12px; /* Уште помала големина за многу мали екрани */
-    }
-}
- */
+/*@media (max-width: 480px) {*/
+/*    #mobile {*/
+/*        font-size: 12px; !* Уште помала големина за многу мали екрани *!*/
+/*    }*/
+/*}*/
