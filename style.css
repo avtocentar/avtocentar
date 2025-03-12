@@ -449,7 +449,7 @@ nav.navbar {
 }
 
 .featured .featured-slider .box img{
-    width: 100%;
+    width: 78%;
     padding: 2rem;
 }
 
@@ -1397,10 +1397,10 @@ sold-badge-fiat{
     width: 100px;
         }
 
-        .vehicles .vehicles-slider .box img{
+/*         .vehicles .vehicles-slider .box img{
             width: 74%;
         }
-        
+         */
 
 }
 
