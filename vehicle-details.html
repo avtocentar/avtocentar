@@ -11,9 +11,7 @@
 
 </head>
 <body>
-<!--<header>-->
-<!--    <h1>Детали за Возилото</h1>-->
-<!--</header>-->
+    
 <header class="header" id="vehicleHeader">
     <div id="menu-btn" class="fas fa-bars"></div>
     <a href="index.html#home">
@@ -30,16 +28,16 @@
     <div id="mobile">
         <a href="tel:+38977575625">📞 +389 77 575 625</a>
     </div>
-
 </header>
+    
 <section id="vehicle-details">
-    <!--    <h2 id="vehicleTitle"></h2>-->
 
     <div class="image-container">
-        <button id="prevBtn" class="arrow-btn">&#10094;</button> <!-- Лева стрелка -->
+        <button id="prevBtn" class="arrow-btn">&#10094;</button> 
         <img id="mainImage" src="" alt="Автомобил">
-        <button id="nextBtn" class="arrow-btn">&#10095;</button> <!-- Десна стрелка -->
+        <button id="nextBtn" class="arrow-btn">&#10095;</button> 
     </div>
+    
     <div id="vehiclePrice" class="vehicle-price"></div>
     <ul id="vehicleInfo">
         <li>Марка:</li>
@@ -56,12 +54,9 @@
         <li>Класа на емисија:</li>
     </ul>
 
-
-
-
-    <!--     <button id="wishlistButton">Додај во Wishlist</button> -->
     <button id="backButton"></button>
 </section>
+    
 <section class="footer">
     <div class="box-container">
         <div class="box">
@@ -82,7 +77,6 @@
             <a href="https://www.facebook.com/people/Premium-Avto-Centar/61555113871512/"><i class="fab fa-facebook-f"></i> Facebook </a>
             <a href="https://www.instagram.com/avtocentar.mk/"><i class="fab fa-instagram"></i> Instagram </a>
         </div>
-
     </div>
     <div class="credit"> © Avto Centar 2025 </div>
 </section>
@@ -108,7 +102,7 @@
             return;
         }
 
-        // Почетна слика
+       
         mainImage.src = vehicle.images[currentIndex];
         document.getElementById("wishlistButton").addEventListener("click", () => {
             alert("Возилото е додадено во Wishlist!");
@@ -120,7 +114,7 @@
             }
         }
 
-        // Ротирање на слики
+        
         prevBtn.addEventListener("click", function () {
             currentIndex = (currentIndex - 1 + vehicle.images.length) % vehicle.images.length;
             updateImage(currentIndex);
@@ -181,24 +175,6 @@
         const vehicle = JSON.parse(vehicleData);
         let currentIndex = 0;
 
-        // Променете ги податоците динамички
-        // document.getElementById("vehicleTitle").textContent = vehicle.name;
-
-        // const vehicleInfo = `
-        //     Марка: ${vehicle.brand} <br>
-        //     Модел: ${vehicle.model} <br>
-        //     Година: ${vehicle.year} <br>
-        //     Гориво: ${vehicle.fuel} <br>
-        //     Километри: ${vehicle.mileage} <br>
-        //     Менувач: ${vehicle.transmission} <br>
-        //     Каросерија: ${vehicle.bodyStyle} <br>
-        //     Боја: ${vehicle.color} <br>
-        //     Регистрација: ${vehicle.registration} <br>
-        //     Регистрирана до: ${vehicle.registrationDate} <br>
-        //     Сила на моторот: ${vehicle.power} <br>
-        //     Класа на емисија: ${vehicle.emissionsClass}
-        // `;
-        // document.getElementById("vehicleInfo").innerHTML = vehicleInfo;
         document.getElementById("vehiclePrice").textContent = `Цена: ${vehicle.price}`; 
         const vehicleInfoList = document.getElementById("vehicleInfo");
         vehicleInfoList.innerHTML = ""; // Исчисти ја постоечката содржина
@@ -233,7 +209,7 @@
             return;
         }
 
-        // Почетна слика
+        
         mainImage.src = vehicle.images[currentIndex];
 
         function updateImage(index) {
@@ -243,7 +219,6 @@
             }
         }
 
-        // Ротирање на слики
         prevBtn.addEventListener("click", function () {
             currentIndex = (currentIndex - 1 + vehicle.images.length) % vehicle.images.length;
             updateImage(currentIndex);
