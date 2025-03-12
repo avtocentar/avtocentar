@@ -6,17 +6,103 @@
     <title>Детали за Возилото</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <!-- Swiper.js стилови -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <style>
-        /* Стилови за курсорот кога може да се повлече */
-        #mainImage {
-            cursor: pointer;
+        /* Поравнување на спецификациите десно */
+        #vehicleInfo {
+            list-style: none;
+            padding: 0;
         }
 
-        /* Стилови за курсорот кога сликата се повлекува */
+        #vehicleInfo li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 10px;
+            font-size: 17px;
+        }
+
+        #vehicleInfo .label {
+            font-weight: bold;
+        }
+
+        #vehicleInfo .value {
+            text-align: right;
+            flex-grow: 1;
+        }
+
+        /* Стилови за копчињата */
+        .custom-buttons {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .custom-buttons button {
+            position: relative;
+            background: transparent;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 12px;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .custom-buttons button:hover {
+            background: transparent;
+        }
 
 
+
+        #anotherhtmlprev.swiper-button-prev,
+        #anotherhtmlnext.swiper-button-next {
+             width: 10px;
+             height: 40px;
+             background-color: rgba(0, 0, 0, 0);
+             border-radius: 50%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-top: -100px;
+             margin-left: 450px;
+             padding: 5px;
+             margin-right: 450px;
+
+        }
+        #anotherhtmlprev.swiper-button-prev:after, #anotherhtmlnext.swiper-button-next:after{
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 991px) {
+            #anotherhtmlprev.swiper-button-prev,
+            #anotherhtmlnext.swiper-button-next {
+                width: 10px;
+                height: 40px;
+                background-color: rgba(0, 0, 0, 0);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: -7px;
+                padding: 5px;
+                margin-right: -7px;
+                margin-top: -192px;
+            }
+            #anotherhtmlprev.swiper-button-prev:after, #anotherhtmlnext.swiper-button-next:after{
+                color: black;
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            #vehicle-details img {
+                width: 100%;
+                max-width: 465px;
+                border-radius: 10px;
+                margin-top: 70px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -26,61 +112,46 @@
     <a href="index.html#home">
         <img id="logo" src="images/home-page.jpg">
     </a>
-    <nav class="navbar" onclick="">
+    <nav class="navbar">
         <a href="index.html#home">Почетна</a>
         <a href="index.html#vehicles">Ново</a>
-        <a href="#index.html#services">Услуги</a>
+        <a href="index.html#services">Услуги</a>
         <a href="index.html#featured">Сите возила</a>
         <a href="index.html#contact">Контакт</a>
     </nav>
-
     <div id="mobile">
         <a href="tel:+38977575625">📞 +389 77 575 625</a>
     </div>
 </header>
 
 <section id="vehicle-details">
-
-    <div class="image-container">
-        <button id="prevBtn" class="arrow-btn">&#10094;</button>
-        <img id="mainImage" src="" alt="Автомобил">
-        <button id="nextBtn" class="arrow-btn">&#10095;</button>
+    <div class="swiper image-container">
+        <div class="swiper-wrapper"></div>
     </div>
 
-    <div id="vehiclePrice" class="vehicle-price"></div>
-    <ul id="vehicleInfo">
-        <li>Марка:</li>
-        <li>Модел:</li>
-        <li>Година:</li>
-        <li>Гориво:</li>
-        <li>Километри:</li>
-        <li>Менувач:</li>
-        <li>Каросерија:</li>
-        <li>Боја:</li>
-        <li>Регистрација:</li>
-        <li>Регистрирана до:</li>
-        <li>Сила на моторот:</li>
-        <li>Класа на емисија:</li>
-    </ul>
+    <!-- Custom копчиња -->
 
-    <button id="backButton"></button>
+    <div class="swiper-pagination"></div>
+    <div id="anotherhtmlprev" class="swiper-button-prev"></div>
+    <div id="anotherhtmlnext" class="swiper-button-next"></div>
+
+    <div id="vehiclePrice" class="vehicle-price"></div>
+    <ul id="vehicleInfo"></ul>
 </section>
 
 <section class="footer">
     <div class="box-container">
         <div class="box">
             <h3>Работно време: </h3>
-            <a href="#contact" onclick="return false;"><i class="fas fa-circle"></i> Понеделник - Сабота </a>
-            <a href="#contact" onclick="return false;"><i class="fas fa-circle"></i> 08:00 - 16:00</a>
+            <a href="#contact"><i class="fas fa-circle"></i> Понеделник - Сабота </a>
+            <a href="#contact"><i class="fas fa-circle"></i> 08:00 - 16:00</a>
         </div>
-
         <div class="box">
             <h3>Контакт: </h3>
-            <a href="#contact" onclick="return false;"><i class="fas fa-phone"></i> +389 77 575 625</a>
-            <a href="#contact"onclick="return false;"><i class="fas fa-envelope"></i> avtocentar@protonmail.com </a>
-            <a href="#contact"onclick="return false;"><i class="fas fa-map-marker-alt"></i> Kocani, North Macedonia 2300 </a>
+            <a href="#contact"><i class="fas fa-phone"></i> +389 77 575 625</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> avtocentar@protonmail.com </a>
+            <a href="#contact"><i class="fas fa-map-marker-alt"></i> Kocani, North Macedonia 2300 </a>
         </div>
-
         <div class="box">
             <h3>Новости: </h3>
             <a href="https://www.facebook.com/people/Premium-Avto-Centar/61555113871512/"><i class="fab fa-facebook-f"></i> Facebook </a>
@@ -90,7 +161,9 @@
     <div class="credit"> © Avto Centar 2025 </div>
 </section>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+
     document.addEventListener("DOMContentLoaded", function () {
         const menuBtn = document.getElementById("menu-btn");
         const navbar = document.querySelector(".navbar");
@@ -108,204 +181,55 @@
         }
 
         const vehicle = JSON.parse(vehicleData);
-        let currentIndex = 0;
-
-        const mainImage = document.getElementById("mainImage");
-        const prevBtn = document.getElementById("prevBtn");
-        const nextBtn = document.getElementById("nextBtn");
+        const imageContainer = document.querySelector(".swiper-wrapper");
 
         if (!vehicle.images || vehicle.images.length === 0) {
             console.error("Грешка: Нема слики за ова возило!");
             return;
         }
 
-
-        mainImage.src = vehicle.images[currentIndex];
-        document.getElementById("wishlistButton").addEventListener("click", () => {
-            alert("Возилото е додадено во Wishlist!");
-        });
-        function updateImage(index) {
-            if (index >= 0 && index < vehicle.images.length) {
-                currentIndex = index;
-                mainImage.src = vehicle.images[currentIndex];
-            }
-        }
-
-
-        prevBtn.addEventListener("click", function () {
-            currentIndex = (currentIndex - 1 + vehicle.images.length) % vehicle.images.length;
-            updateImage(currentIndex);
+        // Додавање на слики во Swiper
+        imageContainer.innerHTML = "";
+        vehicle.images.forEach(imageSrc => {
+            const slide = document.createElement("div");
+            slide.classList.add("swiper-slide");
+            slide.innerHTML = `<img src="${imageSrc}" alt="Слика од автомобил">`;
+            imageContainer.appendChild(slide);
         });
 
-        nextBtn.addEventListener("click", function () {
-            currentIndex = (currentIndex + 1) % vehicle.images.length;
-            updateImage(currentIndex);
+        // Иницијализација на Swiper (без autoplay)
+        var swiper = new Swiper(".image-container", {
+            loop: true,
+            allowTouchMove: true, // Овозможува touch swipe
         });
 
-        console.log("Image slider успешно иницијализиран!");
-    });
-
-    let currentImageIndex = 0;
-    const images = [
-        "images/vehicle-2.jpg",
-        "images/opel2014-2.jpg",
-        "images/opel2014-3.jpg",
-        "images/opel2014-4.jpg",
-        "images/opel2014-5.jpg",
-        "images/opel2014-6.jpg",
-        "images/opel2014-7.jpg",
-        "images/opel2014-8.jpg",
-        "images/opel2014-9.jpg",
-        "images/opel2014-10.jpg",
-        "images/opel2014-11.jpg",
-        "images/opel2014-12.jpg",
-        "images/opel2014-13.jpg",
-    ];
-
-    const mainImage = document.getElementById("mainImage");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-
-    function updateImage() {
-        mainImage.src = images[currentImageIndex];
-    }
-
-    // Претходна слика
-    prevBtn.addEventListener("click", () => {
-        currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
-        updateImage();
-    });
-
-    // Следна слика
-    nextBtn.addEventListener("click", () => {
-        currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
-        updateImage();
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        const vehicleData = localStorage.getItem("selectedVehicle");
-
-        if (!vehicleData) {
-            console.error("Грешка: Нема зачувани податоци во localStorage!");
-            return;
-        }
-
-        const vehicle = JSON.parse(vehicleData);
-        let currentIndex = 0;
-
+        // Прикажи цена
         document.getElementById("vehiclePrice").textContent = `Цена: ${vehicle.price}`;
+
+        // Прикажи спецификации на возилото (поравнети десно)
         const vehicleInfoList = document.getElementById("vehicleInfo");
-        vehicleInfoList.innerHTML = ""; // Исчисти ја постоечката содржина
-        const details = [
-            ["Марка:", vehicle.brand],
-            ["Модел:", vehicle.model],
-            ["Година:", vehicle.year],
-            ["Гориво:", vehicle.fuel],
-            ["Километри:", vehicle.mileage],
-            ["Менувач:", vehicle.transmission],
-            ["Каросерија:", vehicle.bodyStyle],
-            ["Боја:", vehicle.color],
-            ["Регистрација:", vehicle.registration],
-            ["Регистрирана до:", vehicle.registrationDate],
-            ["Сила на моторот:", vehicle.power],
-            ["Класа на емисија:", vehicle.emissionsClass]
-        ];
+        vehicleInfoList.innerHTML = `
+        <li><span class="label">Марка:</span> <span class="value">${vehicle.brand}</span></li>
+        <li><span class="label">Модел:</span> <span class="value">${vehicle.model}</span></li>
+        <li><span class="label">Година:</span> <span class="value">${vehicle.year}</span></li>
+        <li><span class="label">Гориво:</span> <span class="value">${vehicle.fuel}</span></li>
+        <li><span class="label">Километри:</span> <span class="value">${vehicle.mileage}</span></li>
+        <li><span class="label">Менувач:</span> <span class="value">${vehicle.transmission}</span></li>
+        <li><span class="label">Каросерија:</span> <span class="value">${vehicle.bodyStyle}</span></li>
+        <li><span class="label">Боја:</span> <span class="value">${vehicle.color}</span></li>
+        <li><span class="label">Регистрација:</span> <span class="value">${vehicle.registration}</span></li>
+        <li><span class="label">Регистрирана до:</span> <span class="value">${vehicle.registrationDate}</span></li>
+        <li><span class="label">Сила на моторот:</span> <span class="value">${vehicle.power}</span></li>
+        <li><span class="label">Класа на емисија:</span> <span class="value">${vehicle.emissionsClass}</span></li>
+    `;
 
-        details.forEach(([label, value]) => {
-            let li = document.createElement("li");
-            li.innerHTML = `<span class="label">${label}</span> <span class="value">${value}</span>`;
-            vehicleInfoList.appendChild(li);
-        });
+        // Custom стрелки за навигација (Prev & Next)
+        document.getElementById("anotherhtmlprev").addEventListener("click", () => swiper.slidePrev());
+        document.getElementById("anotherhtmlnext").addEventListener("click", () => swiper.slideNext());
 
-
-        const mainImage = document.getElementById("mainImage");
-        const prevBtn = document.getElementById("prevBtn");
-        const nextBtn = document.getElementById("nextBtn");
-
-        if (!vehicle.images || vehicle.images.length === 0) {
-            console.error("Грешка: Нема слики за ова возило!");
-            return;
-        }
-
-
-        mainImage.src = vehicle.images[currentIndex];
-
-        function updateImage(index) {
-            if (index >= 0 && index < vehicle.images.length) {
-                currentIndex = index;
-                mainImage.src = vehicle.images[currentIndex];
-            }
-        }
-
-        prevBtn.addEventListener("click", function () {
-            currentIndex = (currentIndex - 1 + vehicle.images.length) % vehicle.images.length;
-            updateImage(currentIndex);
-        });
-
-        nextBtn.addEventListener("click", function () {
-            currentIndex = (currentIndex + 1) % vehicle.images.length;
-            updateImage(currentIndex);
-        });
+        // Дополнителен клик на слика за преминување на следна
+        document.querySelector(".swiper").addEventListener("click", () => swiper.slideNext());
     });
-
-
-
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const vehicleData = localStorage.getItem("selectedVehicle");
-
-        if (!vehicleData) {
-            console.error("Грешка: Нема зачувани податоци во localStorage!");
-            return;
-        }
-
-        const vehicle = JSON.parse(vehicleData);
-        let currentIndex = 0;
-
-        const mainImage = document.getElementById("mainImage");
-        const prevBtn = document.getElementById("prevBtn");
-        const nextBtn = document.getElementById("nextBtn");
-
-        if (!vehicle.images || vehicle.images.length === 0) {
-            console.error("Грешка: Нема слики за ова возило!");
-            return;
-        }
-
-        mainImage.src = vehicle.images[currentIndex];
-
-        function updateImage(index) {
-            if (index >= 0 && index < vehicle.images.length) {
-                currentIndex = index;
-                mainImage.src = vehicle.images[currentIndex];
-            }
-        }
-
-        prevBtn.addEventListener("click", function () {
-            currentIndex = (currentIndex - 1 + vehicle.images.length) % vehicle.images.length;
-            updateImage(currentIndex);
-        });
-
-        nextBtn.addEventListener("click", function () {
-            currentIndex = (currentIndex + 1) % vehicle.images.length;
-            updateImage(currentIndex);
-        });
-
-        // Клик за променување на сликата
-        mainImage.addEventListener("click", function () {
-            // Променување на сликата при клик
-            currentIndex = (currentIndex + 1) % vehicle.images.length; // Претходна или следна слика
-            updateImage(currentIndex);
-        });
-
-        // Променете го курсорот кога ќе кликнете на сликата
-        mainImage.addEventListener("mouseenter", function () {
-            mainImage.style.cursor = 'pointer';  // Курсорот се менува на "pointer" (показател)
-        });
-
-        console.log("Image slider успешно иницијализиран!");
-    });
-
-
 </script>
 
 </body>
