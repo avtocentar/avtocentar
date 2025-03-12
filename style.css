@@ -1437,7 +1437,7 @@ sold-badge-fiat{
                     width: 74%;
                 }
                  */
-        .vehicle-details img{
+        #vehicle-details img{
             margin-top: 40px;
         }
 
