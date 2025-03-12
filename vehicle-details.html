@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Swiper.js стилови -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <style>
+        /* Стилови за курсорот кога може да се повлече */
+        #mainImage {
+            cursor: grab;
+        }
 
+        /* Стилови за курсорот кога сликата се повлекува */
+        #mainImage.grabbing {
+            cursor: grabbing;
+        }
+
+    </style>
 </head>
 <body>
-    
+
 <header class="header">
     <div id="menu-btn" class="fas fa-bars"></div>
     <a href="index.html#home">
@@ -29,15 +40,15 @@
         <a href="tel:+38977575625">📞 +389 77 575 625</a>
     </div>
 </header>
-    
+
 <section id="vehicle-details">
 
     <div class="image-container">
-        <button id="prevBtn" class="arrow-btn">&#10094;</button> 
+        <button id="prevBtn" class="arrow-btn">&#10094;</button>
         <img id="mainImage" src="" alt="Автомобил">
-        <button id="nextBtn" class="arrow-btn">&#10095;</button> 
+        <button id="nextBtn" class="arrow-btn">&#10095;</button>
     </div>
-    
+
     <div id="vehiclePrice" class="vehicle-price"></div>
     <ul id="vehicleInfo">
         <li>Марка:</li>
@@ -56,7 +67,7 @@
 
     <button id="backButton"></button>
 </section>
-    
+
 <section class="footer">
     <div class="box-container">
         <div class="box">
@@ -64,9 +75,9 @@
             <a href="#contact" onclick="return false;"><i class="fas fa-circle"></i> Понеделник - Сабота </a>
             <a href="#contact" onclick="return false;"><i class="fas fa-circle"></i> 08:00 - 16:00</a>
         </div>
-       
+
         <div class="box">
-            <h3>Контакт: </h3>       
+            <h3>Контакт: </h3>
             <a href="#contact" onclick="return false;"><i class="fas fa-phone"></i> +389 77 575 625</a>
             <a href="#contact"onclick="return false;"><i class="fas fa-envelope"></i> avtocentar@protonmail.com </a>
             <a href="#contact"onclick="return false;"><i class="fas fa-map-marker-alt"></i> Kocani, North Macedonia 2300 </a>
@@ -82,7 +93,7 @@
 </section>
 
 <script>
-     document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
         const menuBtn = document.getElementById("menu-btn");
         const navbar = document.querySelector(".navbar");
 
@@ -110,7 +121,7 @@
             return;
         }
 
-       
+
         mainImage.src = vehicle.images[currentIndex];
         document.getElementById("wishlistButton").addEventListener("click", () => {
             alert("Возилото е додадено во Wishlist!");
@@ -122,7 +133,7 @@
             }
         }
 
-        
+
         prevBtn.addEventListener("click", function () {
             currentIndex = (currentIndex - 1 + vehicle.images.length) % vehicle.images.length;
             updateImage(currentIndex);
@@ -183,7 +194,7 @@
         const vehicle = JSON.parse(vehicleData);
         let currentIndex = 0;
 
-        document.getElementById("vehiclePrice").textContent = `Цена: ${vehicle.price}`; 
+        document.getElementById("vehiclePrice").textContent = `Цена: ${vehicle.price}`;
         const vehicleInfoList = document.getElementById("vehicleInfo");
         vehicleInfoList.innerHTML = ""; // Исчисти ја постоечката содржина
         const details = [
@@ -217,7 +228,7 @@
             return;
         }
 
-        
+
         mainImage.src = vehicle.images[currentIndex];
 
         function updateImage(index) {
@@ -237,6 +248,88 @@
             updateImage(currentIndex);
         });
     });
+
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const vehicleData = localStorage.getItem("selectedVehicle");
+
+        if (!vehicleData) {
+            console.error("Грешка: Нема зачувани податоци во localStorage!");
+            return;
+        }
+
+        const vehicle = JSON.parse(vehicleData);
+        let currentIndex = 0;
+
+        const mainImage = document.getElementById("mainImage");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        if (!vehicle.images || vehicle.images.length === 0) {
+            console.error("Грешка: Нема слики за ова возило!");
+            return;
+        }
+
+        mainImage.src = vehicle.images[currentIndex];
+
+        function updateImage(index) {
+            if (index >= 0 && index < vehicle.images.length) {
+                currentIndex = index;
+                mainImage.src = vehicle.images[currentIndex];
+            }
+        }
+
+        prevBtn.addEventListener("click", function () {
+            currentIndex = (currentIndex - 1 + vehicle.images.length) % vehicle.images.length;
+            updateImage(currentIndex);
+        });
+
+        nextBtn.addEventListener("click", function () {
+            currentIndex = (currentIndex + 1) % vehicle.images.length;
+            updateImage(currentIndex);
+        });
+
+        // Додавање на функционалност за drag (повлекување) на сликата
+        let startX = 0;
+        let isDragging = false;
+
+        mainImage.addEventListener("mousedown", function (e) {
+            isDragging = true;
+            startX = e.clientX;  // Земаме почетната позиција на X
+            mainImage.classList.add("grabbing");  // Применуваме класа за променување на курсорот
+            e.preventDefault();  // Запрете ја стандардната акција на глувчето
+        });
+
+        document.addEventListener("mousemove", function (e) {
+            if (!isDragging) return;  // Ако не се повлекува, извршувај само ако е вклучено повлекувањето
+
+            const moveX = e.clientX - startX;  // Разликата во позицијата на X
+            if (Math.abs(moveX) > 50) {  // Ако се преместува повеќе од 50px
+                if (moveX > 0) {
+                    // Десно (Следна слика)
+                    currentIndex = (currentIndex + 1) % vehicle.images.length;
+                } else {
+                    // Лево (Претходна слика)
+                    currentIndex = (currentIndex - 1 + vehicle.images.length) % vehicle.images.length;
+                }
+                updateImage(currentIndex);  // Ажурирај ја сликата
+                startX = e.clientX;  // Постави нова стартна позиција
+            }
+        });
+
+        document.addEventListener("mouseup", function () {
+            isDragging = false;  // Кога ќе се пушти глувчето, запрете го преместувањето
+            mainImage.classList.remove("grabbing");  // Отстрани ја класата кога ќе се пушти глувчето
+        });
+
+        console.log("Image slider успешно иницијализиран!");
+    });
+
+
 </script>
 
 </body>
