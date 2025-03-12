@@ -331,7 +331,7 @@ nav.navbar {
 }
 
 .vehicles .vehicles-slider .box img{
-    width: 100%;
+    width: 78%;
     opacity: .5;
     transform: scale(.8);
 }
@@ -449,7 +449,7 @@ nav.navbar {
 }
 
 .featured .featured-slider .box img{
-    width: 78%;
+    width: 100%;
     padding: 2rem;
 }
 
