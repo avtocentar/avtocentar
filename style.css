@@ -1064,6 +1064,78 @@ sold-badge-fiat{
     width: 100px;
 }
 
+#bmwe92-sold-badge {
+    position: absolute;
+    top: 24px;
+    left: 38px;
+    background: red;
+    color: white;
+    padding: 6px 14px;
+    font-weight: bold;
+    transform: rotate(-38deg);
+    font-size: 13px;
+    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    width: 100px;
+}
+
+#mercedes-sold-badge {
+    position: absolute;
+    top: 24px;
+    left: 38px;
+    background: red;
+    color: white;
+    padding: 6px 14px;
+    font-weight: bold;
+    transform: rotate(-38deg);
+    font-size: 13px;
+    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    width: 100px;
+}
+
+#golf5-sold-badge {
+    position: absolute;
+    top: 24px;
+    left: 38px;
+    background: red;
+    color: white;
+    padding: 6px 14px;
+    font-weight: bold;
+    transform: rotate(-38deg);
+    font-size: 13px;
+    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    width: 100px;
+}
+
+#renaultclio-sold-badge {
+    position: absolute;
+    top: 24px;
+    left: 38px;
+    background: red;
+    color: white;
+    padding: 6px 14px;
+    font-weight: bold;
+    transform: rotate(-38deg);
+    font-size: 13px;
+    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    width: 100px;
+}
+
+#bmwf20-sold-badge {
+    position: absolute;
+    top: 24px;
+    left: 38px;
+    background: red;
+    color: white;
+    padding: 6px 14px;
+    font-weight: bold;
+    transform: rotate(-38deg);
+    font-size: 13px;
+    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    width: 100px;
+}
+
+
+
 
 
 
