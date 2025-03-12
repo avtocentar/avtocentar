@@ -1357,7 +1357,7 @@ sold-badge-fiat{
         #golf5-sold-badge{
             position: absolute;
             top: 24px;
-            left: -1px;
+            left: -2px;
             background: red;
             color: white;
             padding: 6px 14px;
@@ -1371,8 +1371,8 @@ sold-badge-fiat{
 
         #renaultclio-sold-badge{
             position: absolute;
-            top: 24px;
-            left: 2px;
+            top: 25px;
+            left: 3px;
             background: red;
             color: white;
             padding: 6px 14px;
@@ -1385,8 +1385,8 @@ sold-badge-fiat{
 
         #fiat-sold-badge{
             position: absolute;
-            top: 24px;
-            left: 31px;
+            top: 25px;
+            left: 33px;
             background: red;
             color: white;
             padding: 6px 14px;
