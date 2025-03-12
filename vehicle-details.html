@@ -11,13 +11,11 @@
     <style>
         /* Стилови за курсорот кога може да се повлече */
         #mainImage {
-            cursor: grab;
+            cursor: pointer;
         }
 
         /* Стилови за курсорот кога сликата се повлекува */
-        #mainImage.grabbing {
-            cursor: grabbing;
-        }
+
 
     </style>
 </head>
@@ -253,7 +251,6 @@
 
 
 
-
     document.addEventListener("DOMContentLoaded", function () {
         const vehicleData = localStorage.getItem("selectedVehicle");
 
@@ -293,37 +290,16 @@
             updateImage(currentIndex);
         });
 
-        // Додавање на функционалност за drag (повлекување) на сликата
-        let startX = 0;
-        let isDragging = false;
-
-        mainImage.addEventListener("mousedown", function (e) {
-            isDragging = true;
-            startX = e.clientX;  // Земаме почетната позиција на X
-            mainImage.classList.add("grabbing");  // Применуваме класа за променување на курсорот
-            e.preventDefault();  // Запрете ја стандардната акција на глувчето
+        // Клик за променување на сликата
+        mainImage.addEventListener("click", function () {
+            // Променување на сликата при клик
+            currentIndex = (currentIndex + 1) % vehicle.images.length; // Претходна или следна слика
+            updateImage(currentIndex);
         });
 
-        document.addEventListener("mousemove", function (e) {
-            if (!isDragging) return;  // Ако не се повлекува, извршувај само ако е вклучено повлекувањето
-
-            const moveX = e.clientX - startX;  // Разликата во позицијата на X
-            if (Math.abs(moveX) > 50) {  // Ако се преместува повеќе од 50px
-                if (moveX > 0) {
-                    // Десно (Следна слика)
-                    currentIndex = (currentIndex + 1) % vehicle.images.length;
-                } else {
-                    // Лево (Претходна слика)
-                    currentIndex = (currentIndex - 1 + vehicle.images.length) % vehicle.images.length;
-                }
-                updateImage(currentIndex);  // Ажурирај ја сликата
-                startX = e.clientX;  // Постави нова стартна позиција
-            }
-        });
-
-        document.addEventListener("mouseup", function () {
-            isDragging = false;  // Кога ќе се пушти глувчето, запрете го преместувањето
-            mainImage.classList.remove("grabbing");  // Отстрани ја класата кога ќе се пушти глувчето
+        // Променете го курсорот кога ќе кликнете на сликата
+        mainImage.addEventListener("mouseenter", function () {
+            mainImage.style.cursor = 'pointer';  // Курсорот се менува на "pointer" (показател)
         });
 
         console.log("Image slider успешно иницијализиран!");
