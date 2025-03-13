@@ -1194,20 +1194,26 @@ sold-badge-fiat{
 @media (max-width: 991px) {
     .services .box-container .box {
     text-align: center;
-    padding: 13px;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    border: var(--border);
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 8px;
+        padding: 13px;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        margin-left: -9px;
+        margin-right: 50px;
+        margin-top: 8px;
+        width: 107px;
+        height: 129px;
     }
 
 
 .services .box-container .box h3 {
     color: var(--black);
-    font-size: 16px;
+    font-size: 12px;
     text-transform: uppercase;
+}
+
+    .services .box-container{
+    display: flex;
 }
 
     html {
@@ -1299,9 +1305,8 @@ sold-badge-fiat{
             color: black; /* Боја на стрелката */
         }
 
-        .services .box-container .box h3{
-            font-size: 1.7rem;
-        }
+        
+        
 
         #bmwe92-sold-badge{
 
