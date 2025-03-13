@@ -1303,94 +1303,18 @@ sold-badge-fiat{
         }
 
         
-        
-
-        #bmwe92-sold-badge{
-
-            position: absolute;
-            top: 24px;
-            left: -1px;
-            background: red;
-            color: white;
-            padding: 6px 14px;
-            font-weight: bold;
-            transform: rotate(-38deg);
-            font-size: 13px;
-            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-            width: 100px;
-        }
-        #bmwf20-sold-badge{
-
-            position: absolute;
-            top: 24px;
-            left: -1px;
-            background: red;
-            color: white;
-            padding: 6px 14px;
-            font-weight: bold;
-            transform: rotate(-38deg);
-            font-size: 13px;
-            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-            width: 100px;
-        }
-
-        #mercedes-sold-badge{
-            position: absolute;
-            top: 24px;
-            left: -1px;
-            background: red;
-            color: white;
-            padding: 6px 14px;
-            font-weight: bold;
-            transform: rotate(-38deg);
-            font-size: 13px;
-            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-            width: 100px;
-
-        }
 
         #golf5-sold-badge{
-            position: absolute;
-            top: 24px;
-            left: -2px;
-            background: red;
-            color: white;
-            padding: 6px 14px;
-            font-weight: bold;
-            transform: rotate(-38deg);
-            font-size: 13px;
-            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-            width: 100px;
-
+            
+            left: -11px;
         }
 
         #renaultclio-sold-badge{
-            position: absolute;
-            top: 25px;
+           
             left: 3px;
-            background: red;
-            color: white;
-            padding: 6px 14px;
-            font-weight: bold;
-            transform: rotate(-38deg);
-            font-size: 13px;
-            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-            width: 100px;
+            
         }
 
-        #fiat-sold-badge{
-            position: absolute;
-            top: 25px;
-            left: 32px;
-            background: red;
-            color: white;
-            padding: 6px 14px;
-            font-weight: bold;
-            transform: rotate(-38deg);
-            font-size: 13px;
-            clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
-            width: 100px;
-        }
 
         #menu-btn {
             display: block;
