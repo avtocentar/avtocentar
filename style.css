@@ -1093,7 +1093,7 @@ sold-badge-fiat{
 #golf5-sold-badge {
     position: absolute;
     top: 32px;
-    left: -15px;
+    left: -11px;
     background: red;
     color: white;
     padding: 6px 14px;
@@ -1107,7 +1107,7 @@ sold-badge-fiat{
 #renaultclio-sold-badge {
     position: absolute;
     top: 32px;
-    left: -15px;
+    left: 3px;
     background: red;
     color: white;
     padding: 6px 14px;
@@ -1300,19 +1300,6 @@ sold-badge-fiat{
         .swiper-button-next:after {
             font-size: 18px; /* Големина на самата стрелка */
             color: black; /* Боја на стрелката */
-        }
-
-        
-
-        #golf5-sold-badge{
-            
-            left: -11px;
-        }
-
-        #renaultclio-sold-badge{
-           
-            left: 3px;
-            
         }
 
 
