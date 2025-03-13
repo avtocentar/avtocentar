@@ -1050,86 +1050,86 @@ sold-badge-fiat{
 
 #fiat-sold-badge {
     position: absolute;
-    top: 26px;
-    left: 0px;
+    top: 32px;
+    left: -15px;
     background: red;
     color: white;
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
     font-size: 11px;
-    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
-    width: 100px;
+    clip-path: polygon(22% 0%, 69% 0%, 90% 100%, 9% 100%);
+    width: 144px;
 }
 
 #bmwe92-sold-badge {
     position: absolute;
-    top: 26px;
-    left: 0px;
+    top: 32px;
+    left: -15px;
     background: red;
     color: white;
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
     font-size: 11px;
-    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
-    width: 100px;
+    clip-path: polygon(22% 0%, 69% 0%, 90% 100%, 9% 100%);
+    width: 144px;
 }
 
 #mercedes-sold-badge {
     position: absolute;
-    top: 26px;
-    left: 0px;
+    top: 32px;
+    left: -15px;
     background: red;
     color: white;
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
     font-size: 11px;
-    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
-    width: 100px;
+    clip-path: polygon(22% 0%, 69% 0%, 90% 100%, 9% 100%);
+    width: 144px;
 }
 
 #golf5-sold-badge {
     position: absolute;
-    top: 26px;
-    left: 23px;
+    top: 32px;
+    left: -15px;
     background: red;
     color: white;
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
     font-size: 11px;
-    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
-    width: 100px;
+    clip-path: polygon(22% 0%, 69% 0%, 90% 100%, 9% 100%);
+    width: 144px;
 }
 
 #renaultclio-sold-badge {
     position: absolute;
-    top: 26px;
-    left: 5px;
+    top: 32px;
+    left: -15px;
     background: red;
     color: white;
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
     font-size: 11px;
-    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
-    width: 100px;
+    clip-path: polygon(22% 0%, 69% 0%, 90% 100%, 9% 100%);
+    width: 144px;
 }
 
 #bmwf20-sold-badge {
    position: absolute;
-    top: 26px;
-    left: 0px;
+    top: 32px;
+    left: -15px;
     background: red;
     color: white;
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
     font-size: 11px;
-    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
-    width: 100px;
+    clip-path: polygon(22% 0%, 69% 0%, 90% 100%, 9% 100%);
+    width: 144px;
 }
 
 
