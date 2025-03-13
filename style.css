@@ -64,7 +64,7 @@ nav.navbar {
     text-align: center;
     padding-bottom: 2rem;
     font-size: 4.5rem;
-    color: var(--black);
+    color: #222222;
 }
 
 .heading span{
@@ -615,7 +615,7 @@ nav.navbar {
 }
 
 .footer{
-    background: var(--light-grey);
+    background: #666666;
 }
 
 .footer .box-container{
@@ -756,7 +756,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #666666;
 }
 
 header {
