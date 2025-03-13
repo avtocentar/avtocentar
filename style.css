@@ -1218,7 +1218,7 @@ sold-badge-fiat{
     }
 
     header.header{
-        height: 9px;
+        height: 74px;
     }
 
     .header.active {
@@ -1443,6 +1443,14 @@ sold-badge-fiat{
             margin: 2rem;
             font-size: 2rem;
         }
+
+        #logo {
+        width: 53%;
+        margin-left: 10px;
+        display: block;
+        }
+
+        
     }
 
 
