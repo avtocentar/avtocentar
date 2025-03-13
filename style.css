@@ -662,7 +662,7 @@ nav.navbar {
 .swiper-button-next {
     width: 40px; /* Големина на кругот */
     height: 40px; /* Големина на кругот */
-    background-color: rgba(0, 0, 0, 0.5); /* Темна позадина со транспарентност */
+    background-color: transparent; /* Темна позадина со транспарентност */
     border-radius: 50%; /* Го прави копчето круг */
     display: flex;
     justify-content: center;
@@ -677,7 +677,8 @@ nav.navbar {
 .swiper-button-prev:after,
 .swiper-button-next:after {
     font-size: 18px; /* Големина на самата стрелка */
-    color: white; /* Боја на стрелката */
+    color: black; /* Боја на стрелката */
+    font-weight: bold;
 }
 
 
