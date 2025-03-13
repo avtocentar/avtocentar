@@ -641,7 +641,7 @@ function showVehicleDetails(vehicleId) {
             power: "74kw 100hp",
             emissionsClass :" Eуро 5",
             images: [
-                "images/fiat-1 (3).jpg",
+                "images/fiat-1.jpg",
                 "images/fiat-2.jpg",
                 "images/fiat-3.jpg",
                 "images/fiat-4.jpg",
