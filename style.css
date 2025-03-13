@@ -631,7 +631,7 @@ nav.navbar {
 }
 
 .footer .box-container .box a{
-    color: var(--light-color);
+    color: var(--black);
     font-size: 1.4rem;
     display: block;
     padding: 1rem 0;
