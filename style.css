@@ -615,7 +615,7 @@ nav.navbar {
 }
 
 .footer{
-    background-color: #778ba5;
+    background-color: var(--light-color);
 }
 
 .footer .box-container{
