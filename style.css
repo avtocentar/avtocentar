@@ -1057,8 +1057,8 @@ sold-badge-fiat{
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    font-size: 11px;
+    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
     width: 100px;
 }
 
@@ -1071,8 +1071,8 @@ sold-badge-fiat{
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    font-size: 11px;
+    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
     width: 100px;
 }
 
@@ -1085,8 +1085,8 @@ sold-badge-fiat{
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    font-size: 11px;
+    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
     width: 100px;
 }
 
@@ -1099,8 +1099,8 @@ sold-badge-fiat{
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    font-size: 11px;
+    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
     width: 100px;
 }
 
@@ -1113,13 +1113,13 @@ sold-badge-fiat{
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    font-size: 11px;
+    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
     width: 100px;
 }
 
 #bmwf20-sold-badge {
-    position: absolute;
+   position: absolute;
     top: 26px;
     left: 0px;
     background: red;
@@ -1127,8 +1127,8 @@ sold-badge-fiat{
     padding: 6px 14px;
     font-weight: bold;
     transform: rotate(-38deg);
-    font-size: 13px;
-    clip-path: polygon(22% 0%, 67% 1%, 100% 100%, 0% 100%);
+    font-size: 11px;
+    clip-path: polygon(18% 0%, 78% 0%, 103% 92%, -1% 100%);
     width: 100px;
 }
 
