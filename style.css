@@ -1162,7 +1162,7 @@ sold-badge-fiat{
 
 @media (max-width: 991px) {
     .home {
-        height: 138px; /* Намали висината на мобилни уреди */
+        height: 265px; /* Намали висината на мобилни уреди */
     }
     #mobile {
         font-size: 9px; /* Намалување на фонтот за да собира */
