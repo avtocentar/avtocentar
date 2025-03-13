@@ -1198,9 +1198,6 @@ sold-badge-fiat{
         border-radius: .5rem;
         box-shadow: var(--box-shadow);
         border: var(--border);
-        margin-left: -9px;
-        margin-right: 50px;
-        margin-top: 8px;
         width: 107px;
         height: 129px;
     }
