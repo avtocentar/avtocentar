@@ -1230,6 +1230,7 @@ sold-badge-fiat{
     }
     img#logo{
         margin: auto;
+        width: 68%;
     }
     #mobile{
         font-size: 10px;
@@ -1444,11 +1445,6 @@ sold-badge-fiat{
             font-size: 2rem;
         }
 
-        #logo {
-        width: 53%;
-        margin-left: 10px;
-        display: block;
-        }
 
         
     }
