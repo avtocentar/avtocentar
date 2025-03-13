@@ -1287,8 +1287,7 @@ sold-badge-fiat{
     .vehicles-slider {
         position: relative;
 
-        .swiper-button-prev,
-        .swiper-button-next {
+        .swiper-button-prev, .swiper-button-next {
             margin-top: -10px;
             margin-left: 10px;
             padding: 5px;
@@ -1299,14 +1298,7 @@ sold-badge-fiat{
             font-size: 18px; /* Големина на самата стрелка */
             color: black; /* Боја на стрелката */
         }
-        /* Позиција */
-        .swiper-button-prev {
-            left: 15px;
-        }
 
-        .swiper-button-next {
-            right: 15px;
-        }
         .services .box-container .box h3{
             font-size: 1.7rem;
         }
