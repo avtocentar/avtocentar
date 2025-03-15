@@ -1119,7 +1119,7 @@ sold-badge-fiat{
 }
 
 #bmwf20-sold-badge {
-   position: absolute;
+    position: absolute;
     top: 32px;
     left: -15px;
     background: red;
@@ -1193,7 +1193,7 @@ sold-badge-fiat{
 
 @media (max-width: 991px) {
     .services .box-container .box {
-    text-align: center;
+        text-align: center;
         padding: 13px;
         border-radius: .5rem;
         box-shadow: var(--box-shadow);
@@ -1203,15 +1203,15 @@ sold-badge-fiat{
     }
 
 
-.services .box-container .box h3 {
-    color: var(--black);
-    font-size: 12px;
-    text-transform: uppercase;
-}
+    .services .box-container .box h3 {
+        color: var(--black);
+        font-size: 12px;
+        text-transform: uppercase;
+    }
 
     .services .box-container{
-    display: flex;
-}
+        display: flex;
+    }
 
     html {
         font-size: 55%;
@@ -1337,7 +1337,6 @@ sold-badge-fiat{
             display: block;
             margin: 2rem;
             font-size: 2rem;
-        }        
+        }
     }
 }
-
