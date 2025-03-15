@@ -70,10 +70,10 @@ var swiper = new Swiper(".featured-slider", {
     loop:true,
     centeredSlides: true,
     grabCursor:true,
-    autoplay: {
-        delay: 9500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 9500,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
