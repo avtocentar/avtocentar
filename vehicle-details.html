@@ -10,19 +10,19 @@
     <style>
         /* Поравнување на спецификациите десно */
         #wishlistButton {
-    background: red;
-    color: white;
-    padding: 10px 20px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 15px;
-}
+            background: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
 
-#wishlistButton:hover {
-    background: darkred;
-}
+        #wishlistButton:hover {
+            background: darkred;
+        }
         #vehicleInfo {
             list-style: none;
             padding: 0;
@@ -71,17 +71,17 @@
 
         #anotherhtmlprev.swiper-button-prev,
         #anotherhtmlnext.swiper-button-next {
-             width: 10px;
-             height: 40px;
-             background-color: rgba(0, 0, 0, 0);
-             border-radius: 50%;
-             display: flex;
-             justify-content: center;
-             align-items: center;
-             margin-top: -100px;
-             margin-left: 450px;
-             padding: 5px;
-             margin-right: 450px;
+            width: 10px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -100px;
+            margin-left: 450px;
+            padding: 5px;
+            margin-right: 450px;
 
         }
         #anotherhtmlprev.swiper-button-prev:after, #anotherhtmlnext.swiper-button-next:after{
@@ -151,9 +151,9 @@
 
     <div id="vehiclePrice" class="vehicle-price"></div>
     <ul id="vehicleInfo"></ul>
-<a href="tel:+38977575625">
-     <button class="vehicle-price" id="wishlistButton" ><i class="fas fa-phone" style="color:white; font-size: 20px;"></i>  Jави се</button>
-</a>
+    <a href="tel:+38977575625">
+        <button class="vehicle-price" id="wishlistButton" ><i class="fas fa-phone" style="color:white; font-size: 20px;"></i>  Jави се</button>
+    </a>
 </section>
 
 <section class="footer">
@@ -205,7 +205,7 @@
             return;
         }
 
-        // Додавање на слики во Swiper
+// Додавање на слики во Swiper
         imageContainer.innerHTML = "";
         vehicle.images.forEach(imageSrc => {
             const slide = document.createElement("div");
@@ -214,37 +214,37 @@
             imageContainer.appendChild(slide);
         });
 
-        // Иницијализација на Swiper (без autoplay)
+// Иницијализација на Swiper (без autoplay)
         var swiper = new Swiper(".image-container", {
             loop: true,
             allowTouchMove: true, // Овозможува touch swipe
         });
 
-        // Прикажи цена
+// Прикажи цена
         document.getElementById("vehiclePrice").textContent = `Цена: ${vehicle.price}`;
 
-        // Прикажи спецификации на возилото (поравнети десно)
+// Прикажи спецификации на возилото (поравнети десно)
         const vehicleInfoList = document.getElementById("vehicleInfo");
         vehicleInfoList.innerHTML = `
-        <li><span class="label">Марка:</span> <span class="value">${vehicle.brand}</span></li>
-        <li><span class="label">Модел:</span> <span class="value">${vehicle.model}</span></li>
-        <li><span class="label">Година:</span> <span class="value">${vehicle.year}</span></li>
-        <li><span class="label">Гориво:</span> <span class="value">${vehicle.fuel}</span></li>
-        <li><span class="label">Километри:</span> <span class="value">${vehicle.mileage}</span></li>
-        <li><span class="label">Менувач:</span> <span class="value">${vehicle.transmission}</span></li>
-        <li><span class="label">Каросерија:</span> <span class="value">${vehicle.bodyStyle}</span></li>
-        <li><span class="label">Боја:</span> <span class="value">${vehicle.color}</span></li>
-        <li><span class="label">Регистрација:</span> <span class="value">${vehicle.registration}</span></li>
-        <li><span class="label">Регистрирана до:</span> <span class="value">${vehicle.registrationDate}</span></li>
-        <li><span class="label">Сила на моторот:</span> <span class="value">${vehicle.power}</span></li>
-        <li><span class="label">Класа на емисија:</span> <span class="value">${vehicle.emissionsClass}</span></li>
-    `;
+<li><span class="label">Марка:</span> <span class="value">${vehicle.brand}</span></li>
+<li><span class="label">Модел:</span> <span class="value">${vehicle.model}</span></li>
+<li><span class="label">Година:</span> <span class="value">${vehicle.year}</span></li>
+<li><span class="label">Гориво:</span> <span class="value">${vehicle.fuel}</span></li>
+<li><span class="label">Километри:</span> <span class="value">${vehicle.mileage}</span></li>
+<li><span class="label">Менувач:</span> <span class="value">${vehicle.transmission}</span></li>
+<li><span class="label">Каросерија:</span> <span class="value">${vehicle.bodyStyle}</span></li>
+<li><span class="label">Боја:</span> <span class="value">${vehicle.color}</span></li>
+<li><span class="label">Регистрација:</span> <span class="value">${vehicle.registration}</span></li>
+<li><span class="label">Регистрирана до:</span> <span class="value">${vehicle.registrationDate}</span></li>
+<li><span class="label">Сила на моторот:</span> <span class="value">${vehicle.power}</span></li>
+<li><span class="label">Класа на емисија:</span> <span class="value">${vehicle.emissionsClass}</span></li>
+`;
 
-        // Custom стрелки за навигација (Prev & Next)
+// Custom стрелки за навигација (Prev & Next)
         document.getElementById("anotherhtmlprev").addEventListener("click", () => swiper.slidePrev());
         document.getElementById("anotherhtmlnext").addEventListener("click", () => swiper.slideNext());
 
-        // Дополнителен клик на слика за преминување на следна
+// Дополнителен клик на слика за преминување на следна
         document.querySelector(".swiper").addEventListener("click", () => swiper.slideNext());
     });
 </script>
