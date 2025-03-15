@@ -660,10 +660,10 @@ function showVehicleDetails(vehicleId) {
             document.querySelector('.sold-badge').classList.remove('hidden');
         }
     });
-   
+
     localStorage.setItem("selectedVehicle", JSON.stringify(vehicles[vehicleId]));
 
-    
+
     window.location.href = "vehicle-details.html";
 }
 
@@ -676,12 +676,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',  
-        locale: 'mk',  
+        initialView: 'dayGridMonth',
+        locale: 'mk',
         headerToolbar: {
-            left: 'prev,next today',  
-            center: 'title',  
-            right: 'dayGridMonth,timeGridWeek,timeGridDay'  
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
         },
         height: 600
     });
@@ -738,7 +738,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let sliderText = document.querySelector('.slider-text');
     let currentSlide = 0;
 
-    
+
     const slideTexts = [
         { heading: "Добредојдовте во Авто Центар!", subtext: "Најдобрите возила на пазарот." },
         { heading: "Откријте го вашето ново возило!", subtext: "Голем избор на квалитетни автомобили." },
@@ -746,30 +746,30 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     function updateSlide() {
-        
+
         slides.forEach(slide => slide.classList.remove("active"));
         slides[currentSlide].classList.add("active");
 
-        
+
         sliderText.classList.remove("fade");
 
         setTimeout(() => {
-            
+
             sliderHeading.textContent = slideTexts[currentSlide].heading;
             sliderSubtext.textContent = slideTexts[currentSlide].subtext;
 
-            
+
             sliderText.classList.add("fade");
         }, 500); // Кратка пауза за ефектот да биде подобар
     }
 
-    
+
     setInterval(() => {
         currentSlide = (currentSlide + 1) % slides.length;
         updateSlide();
     }, 5000); // Менување на секои 5 секунди
 
-    
+
     document.getElementById("nextSlide").addEventListener("click", function () {
         currentSlide = (currentSlide + 1) % slides.length;
         updateSlide();
@@ -780,6 +780,6 @@ document.addEventListener("DOMContentLoaded", function () {
         updateSlide();
     });
 
-    
+
     updateSlide();
 });
