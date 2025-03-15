@@ -37,6 +37,7 @@ var swiper = new Swiper(".vehicles-slider", {
     slidesPerView: 1,
     spaceBetween: 20,
     loop:true,
+    loopedSlides: 6;
     centeredSlides: true,
     grabCursor:true,
     autoplay: {
