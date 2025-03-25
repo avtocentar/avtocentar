@@ -450,7 +450,7 @@ function showVehicleDetails(vehicleId) {
                 "images/opel2014-12.jpg",
                 "images/opel2014-13.jpg",
             ],
-            price: "7.700 €",
+            price: "7.500 €",
         },
         peugeot208: {
             brand: "Peugeot",
@@ -478,7 +478,7 @@ function showVehicleDetails(vehicleId) {
                 "images/peugeot10.jpg",
                 "images/peugeot11.jpg",
             ],
-            price: "9.800 €",
+            price: "9.400 €",
         },
         VW1200J: {
             brand: "VW Volkswagen",
@@ -502,7 +502,7 @@ function showVehicleDetails(vehicleId) {
                 "images/VWNewImage6.jpg",
                 "images/VW8.jpg",
             ],
-            price: "3.000 €",
+            price: "3.300 €",
         },
         BMWE92: {
             brand: "BMW E92",
@@ -624,7 +624,6 @@ function showVehicleDetails(vehicleId) {
                 "images/bmw-8.jpg",
             ],
             price: "9.800 €",
-            sold: true,
         },
 
         Fiat500sport: {
@@ -671,7 +670,10 @@ function showVehicleDetails(vehicleId) {
                 "images/mercedesbenzvito-4.jpg",
                 "images/mercedesbenzvito-5.jpg",
                 "images/mercedesbenzvito-6.jpg",
-                "images/fiat-7.jpg",
+                "images/mercedesbenzvito-7.jpg",
+                "images/mercedesbenzvito-8.jpg",
+                "images/mercedesbenzvito-9.jpg",
+                "images/mercedesbenzvito-10.jpg",
             ],
             price: "9.000 €",
         },
