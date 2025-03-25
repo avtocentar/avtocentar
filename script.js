@@ -665,8 +665,8 @@ function showVehicleDetails(vehicleId) {
             power: "2.2cc 110kw",
             emissionsClass :" Eуро 4",
             images: [
-                "images/fiat-1.jpg",
-                "images/fiat-2.jpg",
+                "images/mercedes-benz-vito.jpg",
+                "images/mercedesbenzvito-2.jpg",
                 "images/fiat-3.jpg",
                 "images/fiat-4.jpg",
                 "images/fiat-5.jpg",
