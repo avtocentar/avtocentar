@@ -70,10 +70,10 @@ var swiper = new Swiper(".featured-slider", {
     loop:true,
     centeredSlides: true,
     grabCursor:true,
-    autoplay: {
-        delay: 9500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 9500,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -450,7 +450,7 @@ function showVehicleDetails(vehicleId) {
                 "images/opel2014-12.jpg",
                 "images/opel2014-13.jpg",
             ],
-            price: "7.500 €",
+            price: "7.700 €",
         },
         peugeot208: {
             brand: "Peugeot",
@@ -478,7 +478,7 @@ function showVehicleDetails(vehicleId) {
                 "images/peugeot10.jpg",
                 "images/peugeot11.jpg",
             ],
-            price: "9.400 €",
+            price: "9.800 €",
         },
         VW1200J: {
             brand: "VW Volkswagen",
@@ -502,7 +502,7 @@ function showVehicleDetails(vehicleId) {
                 "images/VWNewImage6.jpg",
                 "images/VW8.jpg",
             ],
-            price: "3.300 €",
+            price: "3.000 €",
         },
         BMWE92: {
             brand: "BMW E92",
@@ -624,6 +624,7 @@ function showVehicleDetails(vehicleId) {
                 "images/bmw-8.jpg",
             ],
             price: "9.800 €",
+            sold: true,
         },
 
         Fiat500sport: {
@@ -649,33 +650,6 @@ function showVehicleDetails(vehicleId) {
                 "images/fiat-7.jpg",
             ],
             price: "5.700 €",
-        },
-        mercedesbenzvito: {
-            brand: "Mercedes-Benz",
-            model: "Vito",
-            year: "2007",
-            fuel: "Дизел",
-            mileage: "310.000",
-            transmission: "Автоматски",
-            bodyStyle: "Комби 7+1",
-            color: "Бела",
-            registration: "Македонска",
-            registrationDate: "24.09.2024",
-            power: "2.2cc 110kw",
-            emissionsClass :" Eуро 4",
-            images: [
-                "images/mercedes-benz-vito.jpg",
-                "images/mercedesbenzvito-2.jpg",
-                "images/mercedesbenzvito-3.jpg",
-                "images/mercedesbenzvito-4.jpg",
-                "images/mercedesbenzvito-5.jpg",
-                "images/mercedesbenzvito-6.jpg",
-                "images/mercedesbenzvito-7.jpg",
-                "images/mercedesbenzvito-8.jpg",
-                "images/mercedesbenzvito-9.jpg",
-                "images/mercedesbenzvito-10.jpg",
-            ],
-            price: "9.000 €",
         },
     };
     document.addEventListener("DOMContentLoaded", () => {
