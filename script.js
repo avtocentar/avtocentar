@@ -667,13 +667,13 @@ function showVehicleDetails(vehicleId) {
             images: [
                 "images/mercedes-benz-vito.jpg",
                 "images/mercedesbenzvito-2.jpg",
-                "images/fiat-3.jpg",
-                "images/fiat-4.jpg",
-                "images/fiat-5.jpg",
-                "images/fiat-6.jpg",
+                "images/mercedesbenzvito-3.jpg",
+                "images/mercedesbenzvito-4.jpg",
+                "images/mercedesbenzvito-5.jpg",
+                "images/mercedesbenzvito-6.jpg",
                 "images/fiat-7.jpg",
             ],
-            price: "5.700 €",
+            price: "9.000 €",
         },
     };
     document.addEventListener("DOMContentLoaded", () => {
