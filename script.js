@@ -651,6 +651,30 @@ function showVehicleDetails(vehicleId) {
             ],
             price: "5.700 €",
         },
+        mercedesbenzvito: {
+            brand: "Mercedes-Benz",
+            model: "Vito",
+            year: "2007",
+            fuel: "Дизел",
+            mileage: "310.000",
+            transmission: "Автоматски",
+            bodyStyle: "Комби 7+1",
+            color: "Бела",
+            registration: "Македонска",
+            registrationDate: "24.09.2024",
+            power: "2.2cc 110kw",
+            emissionsClass :" Eуро 4",
+            images: [
+                "images/fiat-1.jpg",
+                "images/fiat-2.jpg",
+                "images/fiat-3.jpg",
+                "images/fiat-4.jpg",
+                "images/fiat-5.jpg",
+                "images/fiat-6.jpg",
+                "images/fiat-7.jpg",
+            ],
+            price: "5.700 €",
+        },
     };
     document.addEventListener("DOMContentLoaded", () => {
         const vehicle = vehicles['BMWF20'];
