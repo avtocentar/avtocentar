@@ -1192,7 +1192,7 @@ sold-badge-fiat{
 
 
 @media (max-width: 991px) {
-    .services .box-container .box {
+/*     .services .box-container .box {
         text-align: center;
         padding: 13px;
         border-radius: .5rem;
@@ -1200,6 +1200,29 @@ sold-badge-fiat{
         border: var(--border);
         width: 107px;
         height: 129px;
+    } */
+    .services .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Автоматско распоредување */
+        gap: 15px;
+        justify-content: center;
+        align-items: stretch; /* Сите кутиите ќе бидат иста висина */
+    }
+
+    .services .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; /* Рамномерно распоредување */
+        text-align: center;
+        padding: 1rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        width: 100%;
+        max-width: 180px;
+        height: 100%; /* Овозможува сите да бидат иста големина */
+        min-height: 150px; /* Минимална висина за сите кутиите */
     }
 
 
@@ -1209,9 +1232,9 @@ sold-badge-fiat{
         text-transform: uppercase;
     }
 
-    .services .box-container{
+/*     .services .box-container{
         display: flex;
-    }
+    } */
 
     html {
         font-size: 55%;
