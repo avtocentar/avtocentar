@@ -834,3 +834,28 @@ document.getElementById("subscribe-form").addEventListener("submit", function(ev
         responseMessage.innerHTML = "❌ Грешка при испраќање. Обидете се повторно.";
     });
 });
+
+document.querySelector(".offer-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Спречува освежување на страницата
+
+    let formData = new FormData(this);
+    let responseMessage = document.querySelector(".offer-response");
+
+    fetch(this.action, {
+        method: this.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+    }).then(response => {
+        if (response.ok) {
+            responseMessage.style.display = "block";
+            responseMessage.innerHTML = "✅ Вашето барање е испратено!";
+            this.reset(); // Испразни го формуларот
+        } else {
+            responseMessage.style.display = "block";
+            responseMessage.innerHTML = "❌ Грешка при испраќање. Обидете се повторно.";
+        }
+    }).catch(error => {
+        responseMessage.style.display = "block";
+        responseMessage.innerHTML = "❌ Грешка при испраќање. Обидете се повторно.";
+    });
+});
