@@ -1232,9 +1232,15 @@ sold-badge-fiat{
     section {
         padding: 2rem;
     }
-    img#logo{
+/*     img#logo{
         margin: auto;
         width: 65%;
+    } */
+    img#logo {
+        width: 100%; /* Намали го процентот за да не биде преголемо */
+        display: block;
+        margin: 0 auto; /* Центрирање */
+        max-width: 150px; /* Ограничување на максималната големина */
     }
     #mobile{
         font-size: 10px;
