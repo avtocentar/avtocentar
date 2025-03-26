@@ -1203,7 +1203,7 @@ sold-badge-fiat{
     } */
     .services .box-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Автоматско распоредување */
+        grid-template-columns: repeat(auto-fit, minmax(80, 1fr)); /* Автоматско распоредување */
         gap: 15px;
         justify-content: center;
         align-items: stretch; /* Сите кутиите ќе бидат иста висина */
