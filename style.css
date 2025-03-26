@@ -1382,7 +1382,7 @@ sold-badge-fiat{
     }
 
     /* Поправка на услугите */
-    .services .box-container {
+/*     .services .box-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -1392,7 +1392,7 @@ sold-badge-fiat{
     .services .box {
         width: 45%; /* Две колони на таблет */
         text-align: center;
-    }
+    } */
 
     /* Поправка на Google мапата */
     .contact .row {
