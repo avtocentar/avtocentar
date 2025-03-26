@@ -1369,3 +1369,46 @@ sold-badge-fiat{
         }
     }
 }
+
+
+
+@media (max-width: 1024px) {
+    /* Поправка на background-slider */
+    .background-slider {
+        width: 100%;
+        height: 60vh; /* Намалување на висината за таблет */
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Поправка на услугите */
+    .services .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .services .box {
+        width: 45%; /* Две колони на таблет */
+        text-align: center;
+    }
+
+    /* Поправка на Google мапата */
+    .contact .row {
+        flex-direction: column; /* Подреди ги во колона наместо во ред */
+        align-items: center;
+    }
+
+    .contact .row iframe {
+        width: 90%;
+        height: 300px; /* Намалување на висината на мапата */
+    }
+
+    /* Поправка на слики во carousel */
+    .swiper-slide img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
