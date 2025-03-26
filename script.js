@@ -808,3 +808,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateSlide();
 });
+
+
+document.getElementById("subscribe-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Спречува освежување на страницата
+
+    let formData = new FormData(this);
+    let responseMessage = document.getElementById("response-message");
+
+    fetch(this.action, {
+        method: this.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+    }).then(response => {
+        if (response.ok) {
+            responseMessage.style.display = "block";
+            responseMessage.innerHTML = "✅ Ви благодариме за претплатата!";
+            this.reset(); // Испразни го формуларот
+        } else {
+            responseMessage.style.display = "block";
+            responseMessage.innerHTML = "❌ Грешка при испраќање. Обидете се повторно.";
+        }
+    }).catch(error => {
+        responseMessage.style.display = "block";
+        responseMessage.innerHTML = "❌ Грешка при испраќање. Обидете се повторно.";
+    });
+});
