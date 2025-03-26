@@ -1192,15 +1192,15 @@ sold-badge-fiat{
 
 
 @media (max-width: 991px) {
-    /*     .services .box-container .box {
-            text-align: center;
-            padding: 13px;
-            border-radius: .5rem;
-            box-shadow: var(--box-shadow);
-            border: var(--border);
-            width: 107px;
-            height: 129px;
-        } */
+/*     .services .box-container .box {
+        text-align: center;
+        padding: 13px;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        width: 107px;
+        height: 129px;
+    } */
     .services .box-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* Автоматско распоредување */
@@ -1232,9 +1232,9 @@ sold-badge-fiat{
         text-transform: uppercase;
     }
 
-    /*     .services .box-container{
-            display: flex;
-        } */
+/*     .services .box-container{
+        display: flex;
+    } */
 
     html {
         font-size: 55%;
@@ -1255,10 +1255,10 @@ sold-badge-fiat{
     section {
         padding: 2rem;
     }
-    /*     img#logo{
-            margin: auto;
-            width: 65%;
-        } */
+/*     img#logo{
+        margin: auto;
+        width: 65%;
+    } */
     img#logo {
         width: 100%; /* Намали го процентот за да не биде преголемо */
         display: block;
@@ -1369,5 +1369,3 @@ sold-badge-fiat{
         }
     }
 }
-
-
