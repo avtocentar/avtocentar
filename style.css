@@ -8,6 +8,7 @@
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
     --black1:#000000ff
 }
+
 /* *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -1192,15 +1193,15 @@ sold-badge-fiat{
 
 
 @media (max-width: 991px) {
-/*     .services .box-container .box {
-        text-align: center;
-        padding: 13px;
-        border-radius: .5rem;
-        box-shadow: var(--box-shadow);
-        border: var(--border);
-        width: 107px;
-        height: 129px;
-    } */
+    /*     .services .box-container .box {
+            text-align: center;
+            padding: 13px;
+            border-radius: .5rem;
+            box-shadow: var(--box-shadow);
+            border: var(--border);
+            width: 107px;
+            height: 129px;
+        } */
     .services .box-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* Автоматско распоредување */
@@ -1222,7 +1223,7 @@ sold-badge-fiat{
         width: 100%;
         max-width: 180px;
         height: 100%; /* Овозможува сите да бидат иста големина */
-        min-height: 164px; /* Минимална висина за сите кутиите */
+        min-height: 150px; /* Минимална висина за сите кутиите */
     }
 
 
@@ -1232,9 +1233,9 @@ sold-badge-fiat{
         text-transform: uppercase;
     }
 
-/*     .services .box-container{
-        display: flex;
-    } */
+    /*     .services .box-container{
+            display: flex;
+        } */
 
     html {
         font-size: 55%;
@@ -1255,10 +1256,10 @@ sold-badge-fiat{
     section {
         padding: 2rem;
     }
-/*     img#logo{
-        margin: auto;
-        width: 65%;
-    } */
+    /*     img#logo{
+            margin: auto;
+            width: 65%;
+        } */
     img#logo {
         width: 100%; /* Намали го процентот за да не биде преголемо */
         display: block;
@@ -1371,6 +1372,90 @@ sold-badge-fiat{
 }
 
 
+
+
+/* Општо за сите секции - спречува премногу ширење */
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Центрирање */
+    padding: 2rem 5%; /* Намалување на padding за таблет */
+}
+
+/* Поправка на navbar за да не се расфрла */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Поправка на services да не се изместува */
+@media (max-width: 1024px) {
+    .services .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Центрира кутиите */
+        gap: 15px;
+    }
+
+    .services .box {
+        flex: 1 1 30%; /* Ги прави сите со иста големина */
+        max-width: 30%;
+        text-align: center;
+    }
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+    display: none;
+}
+
+/* Поправка на Google мапата */
+@media (max-width: 1024px) {
+    .contact .row {
+        flex-direction: column; /* Наместо ред, прави ги колона */
+        align-items: center;
+    }
+
+    .contact .row iframe {
+        width: 90%;
+        height: 300px; /* Поправи ја висината за таблет */
+    }
+}
+
+/* Поправка на текст врз слики за таблети и мобилни */
+@media (max-width: 1024px) {
+    .slider-text {
+        font-size: 1.8rem; /* Намалување на големината на текстот */
+        padding: 10px 15px; /* Прилагодување на padding */
+        max-width: 80%; /* Спречување на предолго растегнување */
+    }
+
+    .slider-text h2 {
+        font-size: 2.2rem; /* Намалување на насловот */
+    }
+
+    .slider-text p {
+        font-size: 1.4rem; /* Намалување на описот */
+    }
+}
+
+/* --- ПОЧЕТНА СЛИКА (НЕКА БИДЕ ПОНИСКА) --- */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .hero {
+        background-size: contain; /* За да не се исечи */
+        background-position: center;
+        height: 75vh; /* Малку намалена висина */
+    }
+
+    .hero-text {
+        font-size: 2rem;
+        padding: 30px;
+    }
+}
+
 @media (max-width: 1024px) {
     /* Поправка на background-slider */
     .background-slider {
@@ -1381,41 +1466,38 @@ sold-badge-fiat{
     }
 
 
-/* Поправка на Google мапата */
-.contact .row {
-    flex-direction: column; /* Подреди ги во колона наместо во ред */
-    align-items: center;
+    /* Поправка на Google мапата */
+    .contact .row {
+        flex-direction: column; /* Подреди ги во колона наместо во ред */
+        align-items: center;
+    }
+
+    .contact .row iframe {
+        width: 90%;
+        height: 300px; /* Намалување на висината на мапата */
+    }
+
+    /* Поправка на слики во carousel */
+    .swiper-slide img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    #golf5-sold-badge {
+        position: absolute;
+        top: 34px; /* Намалување за да не биде превисоко */
+        left: 0px; /* Малку десно */
+        background: red;
+        color: white;
+        padding: 6px 14px;
+        font-weight: bold;
+        transform: rotate(-38deg);
+        font-size: 11px;
+        clip-path: polygon(22% 0%, 69% 0%, 90% 100%, 9% 100%);
+        width: 144px;
+    }
 }
-
-.contact .row iframe {
-    width: 90%;
-    height: 300px; /* Намалување на висината на мапата */
-}
-
-/* Поправка на слики во carousel */
-.swiper-slide img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-#golf5-sold-badge {
-    position: absolute;
-    top: 34px; /* Намалување за да не биде превисоко */
-    left: 0px; /* Малку десно */
-    background: red;
-    color: white;
-    padding: 6px 14px;
-    font-weight: bold;
-    transform: rotate(-38deg);
-    font-size: 11px;
-    clip-path: polygon(22% 0%, 69% 0%, 90% 100%, 9% 100%);
-    width: 144px;
-}
-
-}
-
-
 
 @media (max-width: 991px) {
 
@@ -1465,4 +1547,3 @@ sold-badge-fiat{
          margin: 2rem;
      }
 }
-
