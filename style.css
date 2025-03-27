@@ -1379,7 +1379,7 @@ sold-badge-fiat{
     /* Поправка на background-slider */
     .background-slider {
         width: 100%;
-        height: 60vh; /* Намалување на висината за таблет */
+        height: 89vh; /* Намалување на висината за таблет */
         background-size: cover;
         background-position: center;
     }
@@ -1406,7 +1406,7 @@ sold-badge-fiat{
 #golf5-sold-badge {
     position: absolute;
     top: 34px; /* Намалување за да не биде превисоко */
-    left: 0px; /* Малку десно */
+    left: -12px; /* Малку десно */
     background: red;
     color: white;
     padding: 6px 14px;
