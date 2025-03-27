@@ -1301,6 +1301,7 @@ sold-badge-fiat{
     nav.navbar.active a{
         font-size: 12px;
         margin: auto;
+        padding-top: 20px;
     }
 
     .header .navbar a {
