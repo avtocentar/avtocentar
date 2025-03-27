@@ -1296,7 +1296,7 @@ sold-badge-fiat{
 
     .header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        margin-left: -9px;
+        margin-left: 0px;
     }
     nav.navbar.active a{
         font-size: 12px;
