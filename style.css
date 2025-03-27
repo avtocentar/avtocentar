@@ -1436,5 +1436,16 @@ sold-badge-fiat{
 }
 
 
+@media (max-width: 1024px){
+    .contact .row {
+    flex-direction: column; /* Подреди ги во колона наместо во ред */
+    align-items: center;
+}
+
+.contact .row iframe {
+    width: 90%;
+    height: 300px; /* Намалување на висината на мапата */
+}
+}
 
 
