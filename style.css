@@ -1413,4 +1413,17 @@ sold-badge-fiat{
         clip-path: polygon(22% 0%, 69% 0%, 90% 100%, 9% 100%);
         width: 144px;
     }
+
+     .services .box-container {
+        display: flex;
+        flex-wrap: nowrap; /* Оневозможува да паѓаат во нов ред */
+        justify-content: space-between; /* Разместување на елементите */
+        gap: 20px; /* Растојание меѓу кутиите */
+    }
+
+    .services .box {
+        flex: 1; /* Осигурај се дека сите ќе бидат во еден ред */
+        max-width: 30%; /* Ги прави кутиите помали */
+        text-align: center;
+    }
 }
