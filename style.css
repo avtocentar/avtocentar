@@ -1416,3 +1416,54 @@ sold-badge-fiat{
 }
 
 
+
+@media (max-width: 991px) {
+
+    html{
+        font-size: 55%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+    display: block;
+}
+    .header .navbar{
+        position: absolute;
+        top: 99%; left:0; right:0;
+        background: #fff;
+        border-top: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+
+    html{
+        font-size: 50%;
+    }
+     .header{
+         padding: 2rem;
+     }
+
+     .header .navbar{
+         position: absolute;
+         top: 99%; left:0; right:0;
+         background: #fff;
+         border-top: var(--border);
+     }
+
+     .header .navbar a{
+         display: block;
+         margin: 2rem;
+     }
+}
+
+
