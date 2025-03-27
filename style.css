@@ -1207,6 +1207,8 @@ sold-badge-fiat{
         gap: 15px;
         justify-content: center;
         align-items: stretch; /* Сите кутиите ќе бидат иста висина */
+        margin-left: 140px;
+        margin-right: 140px;
     }
 
     .services .box {
