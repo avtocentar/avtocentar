@@ -1436,7 +1436,7 @@ sold-badge-fiat{
 }
 
 
-@media (max-width: 1024px){
+@media (max-width: 1200px){
     .contact .row {
     flex-direction: column; /* Подреди ги во колона наместо во ред */
     align-items: center;
