@@ -91,11 +91,15 @@ var swiper = new Swiper(".featured-slider", {
         },
     },
 });
-function changePage(pageNumber, event) {
+function changePage(pageNumber, event, scrollToSection = true) {
     if (event) event.preventDefault(); // Spreči default scroll behavior
-    var featuredSection = document.getElementById('featured');
-    if (featuredSection) {
-        featuredSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Skroluvaj samo ako funkcijata e povikana so klik, ne pri prvoto učituvanje
+    if (scrollToSection) {
+        var featuredSection = document.getElementById('featured');
+        if (featuredSection) {
+            featuredSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
     }
 
     var vehicles = document.querySelectorAll('#featured .swiper-slide');
@@ -110,7 +114,9 @@ function changePage(pageNumber, event) {
     document.querySelector(`.page-number:nth-child(${pageNumber})`).classList.add('active');
 }
 
-changePage(1);
+// Inicijaliziraj prvata stranica **bez da skroluva**
+changePage(1, null, false);
+
 
 var swiper = new Swiper(".reviews-slider", {
     slidesPerView: 1,
