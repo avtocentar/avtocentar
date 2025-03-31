@@ -64,16 +64,46 @@ var swiper = new Swiper(".vehicles-slider", {
     },
 });
 
-var swiper = new Swiper(".featured-slider", {
-    slidesPerView: 1,
-    spaceBetween: 20,
+// var swiper = new Swiper(".featured-slider", {
+//     slidesPerView: 1,
+//     spaceBetween: 20,
     // loop:true,
     // centeredSlides: true,
-    grabCursor:true,
+    // grabCursor:true,
     // autoplay: {
     //     delay: 9500,
     //     disableOnInteraction: false,
     // },
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+//     breakpoints: {
+//         0: {
+//             slidesPerView: 1,
+//         },
+//         768: {
+//             slidesPerView: 2,
+//         },
+//         991: {
+//             slidesPerView: 3,
+//         },
+//     },
+// });
+
+
+
+
+var swiper = new Swiper(".featured-slider", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop:true,
+    centeredSlides: true,
+    grabCursor:true,
+    autoplay: {
+        delay: 9500,
+        disableOnInteraction: false,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -90,6 +120,38 @@ var swiper = new Swiper(".featured-slider", {
         },
     },
 });
+function changePage(pageNumber) {
+    // Uzmi sve vozila unutar sekcije
+    var vehicles = document.querySelectorAll('#featured .swiper-slide');
+
+    // Sakrij sva vozila
+    vehicles.forEach(function(vehicle) {
+        vehicle.style.display = 'none';
+    });
+
+    // Prikazuj samo vozila koja odgovaraju broju stranice
+    var pageVehicles = document.querySelectorAll('#featured .swiper-slide[data-page="' + pageNumber + '"]');
+    pageVehicles.forEach(function(vehicle) {
+        vehicle.style.display = 'block';
+    });
+
+    // Promeni aktivni broj stranice
+    var pageNumbers = document.querySelectorAll('.page-number');
+    pageNumbers.forEach(function(page) {
+        page.classList.remove('active');
+    });
+    document.querySelector('.page-number:nth-child(' + pageNumber + ')').classList.add('active');
+}
+
+// Inicijalizuj da se pokaže prva stranica
+changePage(1);
+
+
+
+
+
+
+
 
 var swiper = new Swiper(".reviews-slider", {
     slidesPerView: 1,
