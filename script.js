@@ -63,17 +63,18 @@ var swiper = new Swiper(".vehicles-slider", {
         },
     },
 });
+// var swiper = new Swiper('.featured-slider', {
+//     slidesPerView: 1,
+//     spaceBetween: 10,
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,  // Omogućava klik na brojeve za prelazak
+//     },
+// });
 
 var swiper = new Swiper(".featured-slider", {
     slidesPerView: 1,
     spaceBetween: 20,
-    // loop:true,
-    // centeredSlides: true,
-    grabCursor:true,
-    autoplay: {
-        delay: 9500,
-        disableOnInteraction: false,
-    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -90,64 +91,6 @@ var swiper = new Swiper(".featured-slider", {
         },
     },
 });
-
-
-
-
-// var swiper = new Swiper(".featured-slider", {
-//     slidesPerView: 3,
-//     spaceBetween: 20,
-//     loop:true,
-//     centeredSlides: true,
-//     grabCursor:true,
-//     autoplay: {
-//         delay: 9500,
-//         disableOnInteraction: false,
-//     },
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-//     breakpoints: {
-//         0: {
-//             slidesPerView: 1,
-//         },
-//         768: {
-//             slidesPerView: 2,
-//         },
-//         991: {
-//             slidesPerView: 3,
-//         },
-//     },
-// });
-// function changePage(pageNumber) {
-//     // Uzmi sve vozila unutar sekcije
-//     var vehicles = document.querySelectorAll('#featured .swiper-slide');
-
-    
-//     vehicles.forEach(function(vehicle) {
-//         vehicle.style.display = 'none';
-//     });
-
-//     var pageVehicles = document.querySelectorAll('#featured .swiper-slide[data-page="' + pageNumber + '"]');
-//     pageVehicles.forEach(function(vehicle) {
-//         vehicle.style.display = 'block';
-//     });
-
-
-//     var pageNumbers = document.querySelectorAll('.page-number');
-//     pageNumbers.forEach(function(page) {
-//         page.classList.remove('active');
-//     });
-//     document.querySelector('.page-number:nth-child(' + pageNumber + ')').classList.add('active');
-// }
-
-
-// changePage(1);
-
-
-
-
 function changePage(pageNumber, event) {
     if (event) event.preventDefault(); // Spreči default scroll behavior
     var featuredSection = document.getElementById('featured');
@@ -168,11 +111,6 @@ function changePage(pageNumber, event) {
 }
 
 changePage(1);
-
-
-
-
-
 
 var swiper = new Swiper(".reviews-slider", {
     slidesPerView: 1,
@@ -942,3 +880,15 @@ document.querySelector(".offer-form").addEventListener("submit", function(event)
         responseMessage.innerHTML = "❌ Грешка при испраќање. Обидете се повторно.";
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
