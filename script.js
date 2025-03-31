@@ -59,7 +59,7 @@ var swiper = new Swiper(".vehicles-slider", {
             slidesPerView: 2,
         },
         991: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
     },
 });
