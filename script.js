@@ -145,10 +145,11 @@ var swiper = new Swiper(".featured-slider", {
 
 // changePage(1);
 
+
+
+
 function changePage(pageNumber, event) {
     if (event) event.preventDefault(); // Spreči default scroll behavior
-
-    // Pronaјdi ja sekcijata 'featured' i skroluj do nea
     var featuredSection = document.getElementById('featured');
     if (featuredSection) {
         featuredSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -167,9 +168,6 @@ function changePage(pageNumber, event) {
 }
 
 changePage(1);
-
-
-
 
 
 
