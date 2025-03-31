@@ -69,11 +69,11 @@ var swiper = new Swiper(".featured-slider", {
     spaceBetween: 20,
     // loop:true,
     // centeredSlides: true,
-    // grabCursor:true,
-    // autoplay: {
-    //     delay: 9500,
-    //     disableOnInteraction: false,
-    // },
+    grabCursor:true,
+    autoplay: {
+        delay: 9500,
+        disableOnInteraction: false,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
