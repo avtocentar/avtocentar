@@ -120,31 +120,54 @@ var swiper = new Swiper(".featured-slider", {
 //         },
 //     },
 // });
-function changePage(pageNumber) {
-    // Uzmi sve vozila unutar sekcije
+// function changePage(pageNumber) {
+//     // Uzmi sve vozila unutar sekcije
+//     var vehicles = document.querySelectorAll('#featured .swiper-slide');
+
+    
+//     vehicles.forEach(function(vehicle) {
+//         vehicle.style.display = 'none';
+//     });
+
+//     var pageVehicles = document.querySelectorAll('#featured .swiper-slide[data-page="' + pageNumber + '"]');
+//     pageVehicles.forEach(function(vehicle) {
+//         vehicle.style.display = 'block';
+//     });
+
+
+//     var pageNumbers = document.querySelectorAll('.page-number');
+//     pageNumbers.forEach(function(page) {
+//         page.classList.remove('active');
+//     });
+//     document.querySelector('.page-number:nth-child(' + pageNumber + ')').classList.add('active');
+// }
+
+
+// changePage(1);
+
+function changePage(pageNumber, event) {
+    if (event) event.preventDefault(); // Spreči default scroll behavior
+
+    // Pronaјdi ja sekcijata 'featured' i skroluj do nea
+    var featuredSection = document.getElementById('featured');
+    if (featuredSection) {
+        featuredSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
     var vehicles = document.querySelectorAll('#featured .swiper-slide');
+    vehicles.forEach(vehicle => vehicle.style.display = 'none');
 
-    // Sakrij sva vozila
-    vehicles.forEach(function(vehicle) {
-        vehicle.style.display = 'none';
-    });
+    var pageVehicles = document.querySelectorAll(`#featured .swiper-slide[data-page="${pageNumber}"]`);
+    pageVehicles.forEach(vehicle => vehicle.style.display = 'block');
 
-    // Prikazuj samo vozila koja odgovaraju broju stranice
-    var pageVehicles = document.querySelectorAll('#featured .swiper-slide[data-page="' + pageNumber + '"]');
-    pageVehicles.forEach(function(vehicle) {
-        vehicle.style.display = 'block';
-    });
-
-    // Promeni aktivni broj stranice
     var pageNumbers = document.querySelectorAll('.page-number');
-    pageNumbers.forEach(function(page) {
-        page.classList.remove('active');
-    });
-    document.querySelector('.page-number:nth-child(' + pageNumber + ')').classList.add('active');
+    pageNumbers.forEach(page => page.classList.remove('active'));
+
+    document.querySelector(`.page-number:nth-child(${pageNumber})`).classList.add('active');
 }
 
-// Inicijalizuj da se pokaže prva stranica
 changePage(1);
+
 
 
 
