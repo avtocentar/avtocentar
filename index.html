@@ -19,6 +19,31 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        .featured .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .featured .pagination .page-number {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Kada je broj aktivan (kliknut) */
+        .featured .pagination .page-number.active {
+            background-color: #007bff; /* Plava boja */
+            color: white;
+        }
+
+        /* Kada nije aktivan */
+        .featured .pagination .page-number:hover {
+            background-color: #ddd;
+        }
         @media(max-width: 991px){
             .swiper-button-prev,
             .swiper-button-next {
@@ -270,7 +295,7 @@
         <div class="swiper-wrapper">
 
 
-            <div id="bmwf20" class="swiper-slide box" onclick="showVehicleDetails('BMWF20')">
+            <div id="bmwf20" class="swiper-slide box" data-page="1" onclick="showVehicleDetails('BMWF20')">
                 <div class="image-wrapper">
                     <img src="images/bmw-1.jpg" alt="">
                     <!--                     <span class="sold-badge" id="bmwf20-sold-badge">ПРОДАДЕНО</span> -->
@@ -282,7 +307,7 @@
                 </div>
             </div>
 
-            <div id="fiat" class="swiper-slide box" onclick="showVehicleDetails('Fiat500sport')">
+            <div id="fiat" class="swiper-slide box" data-page="1" onclick="showVehicleDetails('Fiat500sport')">
                 <div class="image-wrapper">
                     <img id="fiat-first-image" src="images/fiat-1.jpg" alt="">
                     <!--                     <span class="sold-badge" id="fiat-sold-badge">ПРОДАДЕНО</span> -->
@@ -295,7 +320,7 @@
             </div>
 
 
-            <div id="bmw" class="swiper-slide box" onclick="showVehicleDetails('BMWE92')">
+            <div id="bmw" class="swiper-slide box" data-page="2" onclick="showVehicleDetails('BMWE92')">
                 <div class="image-wrapper">
                     <img src="images/IMG_1204.jpg" alt="">
                     <span class="sold-badge" id="bmwe92-sold-badge">ПРОДАДЕНО</span>
@@ -307,7 +332,7 @@
                 </div>
             </div>
 
-            <div id="mercedes" class="swiper-slide box" onclick="showVehicleDetails('MercedesAClass')">
+            <div id="mercedes" class="swiper-slide box" data-page="2" onclick="showVehicleDetails('MercedesAClass')">
                 <div class="image-wrapper">
                     <img src="images/DMRT9666.JPG" alt="">
                     <span class="sold-badge" id="mercedes-sold-badge">ПРОДАДЕНО</span>
@@ -319,7 +344,7 @@
                 </div>
             </div>
 
-            <div id="volkswagen" class="swiper-slide box" onclick="showVehicleDetails('VolkswagenGolf5')">
+            <div id="volkswagen" class="swiper-slide box" data-page="2" onclick="showVehicleDetails('VolkswagenGolf5')">
                 <div class="image-wrapper">
                     <img src="images/golf-1.jpg" alt="">
                     <span class="sold-badge" id="golf5-sold-badge">ПРОДАДЕНО</span>
@@ -331,7 +356,7 @@
                 </div>
             </div>
 
-            <div id="renaultClio" class="swiper-slide box" onclick="showVehicleDetails('RenaultClio')">
+            <div id="renaultClio" class="swiper-slide box" data-page="2" onclick="showVehicleDetails('RenaultClio')">
                 <div class="image-wrapper">
                     <img id="renaultImage" src="images/renault-1.jpg" alt="">
                     <span class="sold-badge" id="renaultclio-sold-badge">ПРОДАДЕНО</span>
