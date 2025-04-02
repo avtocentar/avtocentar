@@ -1471,10 +1471,4 @@ sold-badge-fiat{
 
 }
 
-@media (min-width: 1025px) and (max-width: 1272px){
-    #anotherhtmlprev.swiper-button-prev, #anotherhtmlnext.swiper-button-next{
-        margin-left: 210px;
-        margin-right: 210px;
-    }
 
-}
