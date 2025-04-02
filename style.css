@@ -458,8 +458,7 @@ nav.navbar {
 }
 
 .featured .featured-slider .box h3{
-/*     font-size: 2.2rem; */
-       font-size: 21px;
+    font-size: 2.2rem; 
     color: var(--black);
 }
 
@@ -1384,6 +1383,9 @@ sold-badge-fiat{
         background-size: cover;
         background-position: center;
     }
+    .featured .featured-slider .box h3{
+    font-size: 18px; 
+}
 
 
 /* Поправка на Google мапата */
@@ -1447,6 +1449,10 @@ sold-badge-fiat{
     width: 90%;
     height: 300px; /* Намалување на висината на мапата */
 }
+
+    .featured .featured-slider .box h3{
+    font-size: 18px;
+}
 }
 
 @media (max-width: 768px){
@@ -1458,5 +1464,8 @@ sold-badge-fiat{
         height: 100%;
         z-index: -1;
     }
+    .featured .featured-slider .box h3{
+    font-size: 18px;
+}
 }
 
