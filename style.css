@@ -458,7 +458,8 @@ nav.navbar {
 }
 
 .featured .featured-slider .box h3{
-    font-size: 2.2rem;
+/*     font-size: 2.2rem; */
+       font-size: 21px;
     color: var(--black);
 }
 
