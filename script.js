@@ -551,6 +551,8 @@ function showVehicleDetails(vehicleId) {
                 "images/peugeot9.jpg",
                 "images/peugeot10.jpg",
                 "images/peugeot11.jpg",
+                "images/peugeot12.jpg",
+                "images/peugeot13.jpg",
             ],
             price: "9.400 €",
         },
