@@ -680,7 +680,6 @@ function showVehicleDetails(vehicleId) {
                 "images/VW5.jpg",
                 "images/VWNewImage5.jpg",
                 "images/VWNewImage6.jpg",
-                "images/VW8.jpg",
             ],
             price: "3.300 €",
         },
