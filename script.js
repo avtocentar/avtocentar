@@ -612,7 +612,7 @@ function showVehicleDetails(vehicleId) {
 
 
 
-        Fiat500sport: {
+        renaultmegane: {
             brand: "Renault",
             model: "megane",
             year: "2010",
