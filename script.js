@@ -472,7 +472,7 @@ function showVehicleDetails(vehicleId) {
                 "images/hyundai-7.jpg",
                 "images/hyundai-8.jpg",
             ],
-            price: "/ €",
+            price: "4.500 €",
         },
         audi: {
             brand: "Audi",
@@ -497,7 +497,7 @@ function showVehicleDetails(vehicleId) {
                 "images/audi-7.jpg",
                 "images/audi-8.jpg",
             ],
-            price: "/ €",
+            price: "5.650 €",
         },
         opelAdam2014: {
             brand: "Opel",
