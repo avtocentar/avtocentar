@@ -583,6 +583,35 @@ function showVehicleDetails(vehicleId) {
             ],
             price: "9.800 €",
         },
+
+        passat: {
+            brand: "VW",
+            model: "Passat B6 Avant",
+            year: "2007",
+            fuel: "Дизел",
+            mileage: "255.000",
+            transmission: "Автомат DSG",
+            bodyStyle: "Караван",
+            color: "Црна",
+            registration: "Македонска",
+            registrationDate: "02.10.2026",
+            power: "170hp",
+            emissionsClass :" Eуро 4",
+            images: [
+                "images/passat-1.jpg",
+                "images/passat-2.jpg",
+                "images/passat-3.jpg",
+                "images/passat-4.jpg",
+                "images/passat-5.jpg",
+                "images/passat-6.jpg",
+                "images/passat-7.jpg",
+                "images/passat-8.jpg", 
+            ],
+            price: "/ €",
+        },
+
+
+        
         Fiat500sport: {
             brand: "Fiat",
             model: "500",
