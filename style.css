@@ -1191,6 +1191,7 @@ sold-badge-fiat{
         padding: 1rem 0;
         line-height: 1;
         width: 71px;
+        font-weight: bold;
     }
     .home {
         height: 265px; /* Намали висината на мобилни уреди */
