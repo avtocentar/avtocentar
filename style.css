@@ -1243,7 +1243,7 @@ sold-badge-fiat{
         color: var(--black);
         font-size: 10px;
         text-transform: uppercase;
-        padding: 15px;
+        padding: 9px;
     }
     .services .box-container .box h3.second {
         color: var(--black);
