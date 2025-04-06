@@ -606,7 +606,7 @@ function showVehicleDetails(vehicleId) {
                 "images/passat-7.jpg",
                 "images/passat-8.jpg", 
             ],
-            price: "/ €",
+            price: "4.800 €",
         },
 
 
@@ -633,7 +633,7 @@ function showVehicleDetails(vehicleId) {
                 "images/renault-megane-6.jpg",
                 "images/renault-megane-7.jpg",
             ],
-            price: "/ €",
+            price: "4.300 €",
         },
         
         
@@ -659,7 +659,7 @@ function showVehicleDetails(vehicleId) {
                 "images/fiat-6.jpg",
                 "images/fiat-7.jpg",
             ],
-            price: "5.700 €",
+            price: "5.000 €",
         },
 
          VW1200J: {
