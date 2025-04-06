@@ -1251,6 +1251,7 @@ sold-badge-fiat{
         font-size: 10px;
         text-transform: uppercase;
         width: 86px;
+        padding-top: 9px;
 
     }
     .services .box {
