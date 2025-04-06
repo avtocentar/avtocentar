@@ -1244,14 +1244,14 @@ sold-badge-fiat{
         color: var(--black);
         font-size: 10px;
         text-transform: uppercase;
-        padding-top: 14px;
+        padding-top: 5px;
     }
     .services .box-container .box h3.second {
         color: var(--black);
         font-size: 10px;
         text-transform: uppercase;
         width: 86px;
-        padding-top: 14px;
+        padding-top: 5px;
 
     }
     .services .box {
