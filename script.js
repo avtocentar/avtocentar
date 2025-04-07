@@ -460,7 +460,7 @@ function showVehicleDetails(vehicleId) {
             color: "Сива",
             registration: "Македонска",
             registrationDate: "Македонска",
-            power: "66кw",
+            power: "1.6 CRDI 66kw",
             emissionsClass : "EURO 4",
             images: [
                 "images/hyundai-1.jpg",
@@ -485,7 +485,7 @@ function showVehicleDetails(vehicleId) {
             color: "Црна",
             registration: "Македонска",
             registrationDate: "Македонска",
-            power: "77kw",
+            power: "1.9 TDI 77kw",
             emissionsClass : "Еуро 4",
             images: [
                 "images/audi-1.jpg",
@@ -510,7 +510,7 @@ function showVehicleDetails(vehicleId) {
             color: "Бела",
             registration: "Македонска",
             registrationDate: "07.2023",
-            power: "64kw 87ks",
+            power: "1.4i 64kw",
             emissionsClass : "Еуро 5",
             images: [
                 "images/vehicle-2.jpg",
@@ -537,7 +537,7 @@ function showVehicleDetails(vehicleId) {
             color: "Бела",
             registration: "Македонска",
             registrationDate: "06.2023",
-            power: "81kw 110ks",
+            power: "1.2 STT 81kw",
             emissionsClass : "Еуро 5",
             images: [
                 "images/vehicle-3.jpg",
@@ -599,7 +599,7 @@ function showVehicleDetails(vehicleId) {
             color: "Црна",
             registration: "Македонска",
             registrationDate: "Македонска",
-            power: "77kw",
+            power: "1.9 TDI 77kw",
             emissionsClass :" Eуро 4",
             images: [
                 "images/audia32007-1.jpg",
@@ -629,7 +629,7 @@ function showVehicleDetails(vehicleId) {
             color: "Црна",
             registration: "Македонска",
             registrationDate: "02.10.2026",
-            power: "170hp",
+            power: "2.0 TDI 170hp",
             emissionsClass :" Eуро 4",
             images: [
                 "images/passat-1.jpg",
@@ -681,7 +681,7 @@ function showVehicleDetails(vehicleId) {
             color: "Бела",
             registration: "Македонска",
             registrationDate: "01.01.2026",
-            power: "81kw",
+            power: "1.5dci 81kw",
             emissionsClass :" Eуро 4",
             images: [
                 "images/renault-megane-1.jpg",
