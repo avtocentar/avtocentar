@@ -583,7 +583,7 @@ function showVehicleDetails(vehicleId) {
                 "images/seatIbiza2013-10.jpg",
                 "images/seatIbiza2013-11.jpg",
             ],
-            price: "/ €",
+            price: "5.800 €",
         },
 
         passat: {
