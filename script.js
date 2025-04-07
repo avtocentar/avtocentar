@@ -586,6 +586,38 @@ function showVehicleDetails(vehicleId) {
             price: "5.800 €",
         },
 
+
+
+        audia32007: {
+            brand: "AUDI",
+            model: "A3",
+            year: "2007",
+            fuel: "Дизел",
+            mileage: "208.000",
+            transmission: "Рачен",
+            bodyStyle: "Хеџбек",
+            color: "Црна",
+            registration: "Македонска",
+            registrationDate: "Македонска",
+            power: "77kw",
+            emissionsClass :" Eуро 4",
+            images: [
+                "images/audia32007-1.jpg",
+                "images/audia32007-2.jpg",
+                "images/audia32007-3.jpg",
+                "images/audia32007-4.jpg",
+                "images/audia32007-5.jpg",
+                "images/audia32007-6.jpg",
+                "images/audia32007-7.jpg",
+                "images/audia32007-8.jpg",
+                "images/audia32007-9.jpg",
+                "images/audia32007-10.jpg",
+                "images/audia32007-11.jpg",
+            ],
+            price: "6.400 €",
+        },
+
+
         passat: {
             brand: "VW",
             model: "Passat B6 Avant",
