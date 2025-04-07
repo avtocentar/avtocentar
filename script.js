@@ -672,7 +672,7 @@ function showVehicleDetails(vehicleId) {
 
         renaultmegane: {
             brand: "Renault",
-            model: "megane",
+            model: "Megane",
             year: "2010",
             fuel: "Дизел",
             mileage: "300.000",
