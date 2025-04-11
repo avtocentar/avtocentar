@@ -1224,8 +1224,8 @@ sold-badge-fiat{
 
 @media (max-width: 991px) {
     .services .box-container .box i {
-    height: 54px;
-    width: 58px;
+    height: 52px;
+    width: 52px;
     line-height: 6rem;
     font-size: 2.5rem;
     color: var(--black1);
