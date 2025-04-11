@@ -1186,13 +1186,13 @@ sold-badge-fiat{
 
 
 @media (max-width: 991px) {
-    .services .box-container .box p {
+/*     .services .box-container .box p {
         color: var(--black);
         font-size: 10px;
         padding: 1rem 0;
         line-height: 1;
         width: 71px;
-    }
+    } */
     .home {
         height: 265px; /* Намали висината на мобилни уреди */
     }
