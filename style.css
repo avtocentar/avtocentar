@@ -1275,6 +1275,7 @@ sold-badge-fiat{
         color: var(--black);
         font-size: 11px;
         text-transform: uppercase;
+        width: 90px;
     }
     .services .box-container .box:hover h3.second {
         color: #fff;
