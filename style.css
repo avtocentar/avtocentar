@@ -1270,10 +1270,7 @@ sold-badge-fiat{
         min-height: 164px; /* Минимална висина за сите кутиите */
     }
 
-.services .box-container .box i
-{
-    border-radius: 21%;
-}
+
     .services .box-container .box h3 {
         color: var(--black);
         font-size: 11px;
