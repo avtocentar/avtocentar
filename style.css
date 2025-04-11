@@ -1223,6 +1223,16 @@ sold-badge-fiat{
 
 
 @media (max-width: 991px) {
+    .services .box-container .box i {
+    height: 54px;
+    width: 58px;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: var(--black1);
+    background: var(--blue);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
     /*     .services .box-container .box {
             text-align: center;
             padding: 13px;
