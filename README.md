@@ -1,1 +1,2 @@
-<p>Мери Манасиева</p>
+Meri Manasieva<br/>
+Faculty of Computer Science and Engineering
