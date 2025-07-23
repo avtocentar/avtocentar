@@ -593,7 +593,7 @@ function showVehicleDetails(vehicleId) {
             ],
             price: "5.800 €",
         },
-
+        
 
 
         audia32007: {
@@ -625,6 +625,64 @@ function showVehicleDetails(vehicleId) {
             price: "6.400 €",
         },
 
+
+         mercedesbenzc220: {
+            brand: "Mercedes-Benz",
+            model: "C220",
+            year: "2010",
+            fuel: "Дизел",
+            mileage: "225.000",
+            transmission: "Автоматик",
+            bodyStyle: "Седан",
+            color: "Црна",
+            registration: "Македонска",
+            registrationDate: "05.08.2026",
+            power: "125kw",
+            emissionsClass : "Еуро 5",
+            images: [
+                "images/mercedes-benz-c220-1.jpg",
+                "images/mercedes-benz-c220-2.jpg",
+                "images/mercedes-benz-c220-3.jpg",
+                "images/mercedes-benz-c220-4.jpg",
+                "images/mercedes-benz-c220-5.jpg",
+                "images/mercedes-benz-c220-6.jpg",
+                "images/mercedes-benz-c220-7.jpg",
+                "images/mercedes-benz-c220-8.jpg",
+                "images/mercedes-benz-c220-9.jpg",
+                "images/mercedes-benz-c220-10.jpg",
+            ],
+            price: "8.500 €",
+        },
+        
+        cadillaccts: {
+            brand: "CADILLAC",
+            model: "CTS",
+            year: "2007",
+            fuel: "Бензин",
+            mileage: "130.000",
+            transmission: "Автоматик",
+            bodyStyle: "Седан",
+            color: "Црна",
+            registration: "Македонска",
+            registrationDate: "04.12.2025",
+            power: "182kw",
+            emissionsClass : "Еуро 4",
+            images: [
+                "images/cadillac-cts-1.jpg",
+                "images/cadillac-cts-2.jpg",
+                "images/cadillac-cts-3.jpg",
+                "images/cadillac-cts-4.jpg",
+                "images/cadillac-cts-5.jpg",
+                "images/cadillac-cts-6.jpg",
+                "images/cadillac-cts-7.jpg",
+                "images/cadillac-cts-8.jpg",
+                "images/cadillac-cts-9.jpg",
+            ],
+            price: "7.500 €",
+        },
+
+
+        
 
         passat: {
             brand: "VW",
