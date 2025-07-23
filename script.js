@@ -1,3 +1,11 @@
+window.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    const vehicleId = params.get('vehicle');
+    if (vehicleId) {
+        showVehicleDetails(vehicleId);
+    }
+});
+
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
 
