@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    
+    
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1400775024131802');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1400775024131802&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
     <style>
         /* Поравнување на спецификациите десно */
         #wishlistButton {
@@ -133,7 +155,7 @@
         <a href="index.html#contact">Контакт</a>
     </nav>
     <div id="mobile">
-        <a href="tel:+38977575625">📞 +389 77 575 625</a>
+        <a href="tel:+38977575625" class="phone-track" >📞 +389 77 575 625</a>
     </div>
 </header>
 
@@ -150,7 +172,7 @@
 
     <div id="vehiclePrice" class="vehicle-price"></div>
     <ul id="vehicleInfo"></ul>
-    <a href="tel:+38977575625">
+    <a href="tel:+38977575625" class="phone-track" >
         <button class="vehicle-price" id="wishlistButton" ><i class="fas fa-phone" style="color:white; font-size: 20px;"></i>  Jави се</button>
     </a>
 </section>
@@ -247,6 +269,26 @@
         document.querySelector(".swiper").addEventListener("click", () => swiper.slideNext());
     });
 </script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.phone-track').forEach(function (el) {
+      el.addEventListener('click', function () {
+          console.log("clicked call");
+        const contentId = el.getAttribute('data-product-id');
+        fbq('track', 'PhoneClick', {
+          content_ids: [contentId],
+          content_type: 'product',
+          value: 0.00,
+          currency: 'EUR'
+        });
+      });
+    });
+  });
+</script>
+
 
 </body>
 </html>
