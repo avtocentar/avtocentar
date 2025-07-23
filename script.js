@@ -676,9 +676,8 @@ function showVehicleDetails(vehicleId) {
                 "images/cadillac-cts-6.jpg",
                 "images/cadillac-cts-7.jpg",
                 "images/cadillac-cts-8.jpg",
-                "images/cadillac-cts-9.jpg",
             ],
-            price: "7.500 €",
+            price: "10.000 €",
         },
 
 
