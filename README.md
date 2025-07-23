@@ -6,10 +6,9 @@
 
 ## 🔧 Technologies Used
 
-- HTML5  
-- CSS3  
+- HTML
+- CSS
 - JavaScript  
-*(Add: Bootstrap, jQuery, PHP, etc., if applicable)*
 
 ## 🎯 Project Goals
 
